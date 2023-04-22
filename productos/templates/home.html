@@ -1,33 +1,91 @@
 {% extends 'base/index.html' %}
 {% load static %}
 {% block content %}
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-            <img src="{% static 'img/banner-ejemplo.jpg' %}" class="d-block w-100" alt="...">
+<div class="intro">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="{% static 'img/banner-ejemplo.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'img/banner-ejemplo-b.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'img/banner-ejemplo-c.jpg' %}" class="d-block w-100" alt="...">
+            </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-            <img src="{% static 'img/banner-ejemplo-b.jpg' %}" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="{% static 'img/banner-ejemplo-c.jpg' %}" class="d-block w-100" alt="...">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="estado__movil">
+        <img src="{% static 'img/img-video.jpg' %}" alt="" class="estado__movil--img">
+    </div>
+
+    <div class="banner__slogan">
+        <h3 class="banner__slogan--txt"><strong>Un aire moderno y de armonía para tus espacios</strong></h3>
+    </div>
+
+    <div class="container">
+        <div class="intro__title text-center">
+            <p class="intro__title--brand"><strong>Decortinas e Interiores</strong></p>
+            <h1 class="intro__title--header">Cortinas y Persianas modernas en Rionegro/Antioquia</h1>
+            <h2>Sitio web en construcción</h2>
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
 
-<div class="container intro">
-    <div class="intro__title text-center">
-        <p class="intro__title--brand"><strong>Decortinas e Interiores</strong></p>
-        <h1 class="intro__title--header">Cortinas y Persianas modernas en Rionegro/Antioquia</h1>
-        <h2>Sitio web en construcción</h2>
+    <div class="container aboutus">
+        <img src="{% static 'img/img-intro.jpg' %}" alt="" class="aboutus__img">
+        <div class="aboutus__txt">
+            <h3 class="aboutus__header"><strong>Trabajamos con pasión</strong></h3>
+            <p class="aboutus__content">
+                Diseñamos y fabricamos todo tipo de <strong>cortinas, persianas y toldos</strong> con materiales de alta
+                calidad
+                <strong>100% Colombianos</strong> y realizamos el mantenimiento de las mismas para ajustarnos a las
+                necesidades de todos nuestros clientes con la <strong>pasión y el empeño</strong> que dedicamos a todos
+                nuestros
+                productos.<br>
+                <br><a href="/nosotros" class="about__us--link">Conoce más de nosotros aquí</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="container highlight">
+        <div class="high__header">
+            <h3 class="high__header--txt"><strong>Nuestros clientes prefieren</strong></h3>
+            <h4 class="high__header--slogan">Los productos de más alta calidad</h4>
+        </div>
+        <div class="high__content">
+            <div class="high__content--item">
+                <img src="{% static 'img/high-cortina-b.png' %}" alt="" class="content__item--img">
+                <div class="high__content--shop">
+                    <div class="high__content--title"><strong>Panel Japonés</strong></div>
+                    <a href="/tienda/panel-japones/" class="high__content--link icon-cart-plus"> Comprar</a>
+                </div>
+            </div>
+            <div class="high__content--item">
+                <img src="{% static 'img/high-cortina.png' %}" alt="" class="content__item--img">
+                <div class="high__content--shop">
+                    <div class="high__content--title"><strong>Cortina Tradicional</strong></div>
+                    <a href="/tienda/cortina-tradicional/" class="high__content--link icon-cart-plus"> Comprar</a>
+                </div>
+            </div>
+            <div class="high__content--item">
+                <img src="{% static 'img/high-cortina.png' %}" alt="" class="content__item--img">
+                <div class="high__content--shop">
+                    <div class="high__content--title"><strong>Panel Japonés</strong></div>
+                    <a href="/tienda/panel-japones/" class="high__content--link icon-cart-plus"> Comprar</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

@@ -17,7 +17,7 @@ class Product(models.Model): # Crea la tabla product en db
     # productimga = models.CharField(max_length=200, verbose_name="Url imagen principal")
     # productimgb = models.CharField(max_length=200, verbose_name="Url imagen secundaria", blank=True)
     # productimgc = models.CharField(max_length=200, verbose_name="Url tercera imagen", blank=True)
-    productimg = models.ImageField(upload_to='static/img/', verbose_name="Imagen principal del producto")
+    productimg = models.ImageField(upload_to='uploads/static/img/', verbose_name="Imagen principal del producto")
     asesor = models.ForeignKey(Asesor, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):

@@ -1123,11 +1123,130 @@
 .intro {
   margin-top: 80px;
 }
-.intro .intro__title--brand {
+.intro .intro__title {
+  margin-top: 60px;
+}
+.intro .intro__title .intro__title--brand {
   font-size: 60px;
   color: #009292;
 }
+.intro .banner__slogan {
+  width: 100%;
+  background: #009292;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding-top: 4px;
+}
+@media (min-width: 300px) and (max-width: 820px) {
+  .intro .banner__slogan {
+    height: 70px;
+  }
+}
+.intro .aboutus {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro .aboutus .aboutus__img {
+  width: 400px;
+  margin: 20px;
+  border: 4px solid #009292;
+}
+@media (min-width: 300px) and (max-width: 820px) {
+  .intro .aboutus .aboutus__img {
+    width: 90%;
+    margin: 0px;
+  }
+}
+.intro .aboutus .aboutus__txt {
+  width: 40%;
+  margin: 20px;
+}
+.intro .aboutus .aboutus__txt .about__us--link {
+  color: #009292;
+  text-decoration: none;
+}
+.intro .aboutus .aboutus__txt .about__us--link:hover {
+  transition: all 0.6s;
+  color: #F3A817;
+}
+@media (min-width: 300px) and (max-width: 820px) {
+  .intro .aboutus {
+    display: block;
+  }
+  .intro .aboutus .aboutus__img,
+  .intro .aboutus .aboutus__txt {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+.intro .highlight {
+  margin-top: 60px;
+  text-align: center;
+}
+.intro .highlight .high__header .high__header--txt {
+  font-size: 34px;
+  color: #009292;
+}
+.intro .highlight .high__content {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-around;
+  align-items: center;
+}
+.intro .highlight .high__content .high__content--item {
+  cursor: pointer;
+}
+.intro .highlight .high__content .high__content--item .content__item--img {
+  width: 240px;
+}
+.intro .highlight .high__content .high__content--item .high__content--shop {
+  margin-top: 10px;
+  opacity: 0%;
+}
+.intro .highlight .high__content .high__content--item .high__content--shop .high__content--title {
+  font-size: 24px;
+}
+.intro .highlight .high__content .high__content--item .high__content--shop .high__content--link {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 6px;
+  background: #009292;
+  color: #ffffff;
+  text-decoration: none;
+}
+.intro .highlight .high__content .high__content--item .high__content--shop .high__content--link:hover {
+  transition: all 0.6s;
+  color: #F3A817;
+}
+.intro .highlight .high__content .high__content--item:hover .high__content--shop {
+  transition: all 0.8s;
+  opacity: 100%;
+}
+@media (min-width: 300px) and (max-width: 820px) {
+  .intro .highlight .high__content {
+    display: block;
+  }
+  .intro .highlight .high__content .high__content--item {
+    margin-bottom: 40px;
+  }
+  .intro .highlight .high__content .high__content--item .content__item--img {
+    width: 80%;
+  }
+  .intro .highlight .high__content .high__content--item .high__content--shop {
+    opacity: 100%;
+  }
+}
 
+@media (min-width: 300px) and (max-width: 820px) {
+  .banner__slogan {
+    text-align: center;
+  }
+}
 footer {
   background: #5b5a5f;
   position: absolute;
@@ -1208,6 +1327,21 @@ footer .atributo .atributo__k1n0--enlace:hover {
   color: #F3A817;
 }
 
+@media (min-width: 300px) and (max-width: 820px) {
+  footer {
+    height: 780px;
+    padding-top: 60px;
+  }
+  footer .container {
+    display: block;
+  }
+  footer .container .footer__section {
+    margin-bottom: 40px;
+  }
+  footer .container .footer__section .footer__section--map {
+    display: block;
+  }
+}
 .tienda {
   margin-top: 140px;
 }
@@ -1302,8 +1436,25 @@ nav .container-fluid .navbar-right .navbar-social .navbar-social--link:hover {
   color: #F3A817;
 }
 
+.estado__movil {
+  display: none;
+}
+.estado__movil .estado__movil--img {
+  width: 100%;
+}
+@media (min-width: 300px) and (max-width: 820px) {
+  .estado__movil {
+    display: block;
+  }
+}
+
 .carousel {
   margin-top: 100px;
+}
+@media (min-width: 300px) and (max-width: 820px) {
+  .carousel {
+    display: none;
+  }
 }
 
 .migapan nav .breadcrumb .breadcrumb-item a {
