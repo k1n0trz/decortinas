@@ -1131,8 +1131,9 @@
 footer {
   background: #5b5a5f;
   position: absolute;
-  bottom: -800;
+  bottom: -800px;
   width: 100%;
+  height: 260px;
   color: white;
   padding: 20px;
   text-align: left;
@@ -1152,12 +1153,16 @@ footer .container .footer__section .logolink__footer:hover {
 footer .container .footer__section .footer__section--map {
   list-style: none;
   padding-left: 0px;
+  display: flex;
 }
-footer .container .footer__section .footer__section--map .footer__section--list .footer__section--link {
+footer .container .footer__section .footer__section--map .section__list--a {
+  margin-right: 20px;
+}
+footer .container .footer__section .footer__section--map .section__list--a .footer__section--list .footer__section--link {
   color: #ffffff;
   text-decoration: none;
 }
-footer .container .footer__section .footer__section--map .footer__section--list .footer__section--link:hover {
+footer .container .footer__section .footer__section--map .section__list--a .footer__section--list .footer__section--link:hover {
   transition: all 0.6s;
   color: #F3A817;
 }
@@ -1187,6 +1192,18 @@ footer .container .footer__section .footer__section--social .footer__section--li
   text-decoration: none;
 }
 footer .container .footer__section .footer__section--social .footer__section--list .footer__section--link:hover {
+  transition: all 0.6s;
+  color: #F3A817;
+}
+footer .atributo {
+  padding-top: 10px;
+  height: 40px;
+}
+footer .atributo .atributo__k1n0--enlace {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .atributo .atributo__k1n0--enlace:hover {
   transition: all 0.6s;
   color: #F3A817;
 }
@@ -1249,6 +1266,10 @@ footer .container .footer__section .footer__section--social .footer__section--li
   opacity: 100%;
 }
 
+html {
+  position: relative;
+}
+
 * {
   font-family: "Mulish", sans-serif;
 }
@@ -1257,6 +1278,7 @@ body {
   min-height: calc(100vh - 50px);
   /* ajustar según la altura del footer */
   position: relative;
+  margin: 0px;
 }
 
 .navbar-brand .navbar__brand--img {
@@ -1282,6 +1304,15 @@ nav .container-fluid .navbar-right .navbar-social .navbar-social--link:hover {
 
 .carousel {
   margin-top: 100px;
+}
+
+.migapan nav .breadcrumb .breadcrumb-item a {
+  color: #009292;
+  text-decoration: none;
+}
+.migapan nav .breadcrumb .breadcrumb-item a:hover {
+  transition: all 0.6s;
+  color: #F3A817;
 }
 
 /*# sourceMappingURL=estilos.css.map */

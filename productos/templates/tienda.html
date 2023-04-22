@@ -3,35 +3,48 @@
 {% load static %}
 {% block content %}
 
-
-<div class="container tienda">
-    <div class="tienda__header text-center">
-        <h1 class="tienda__header--title">Tienda | Decortinas e Interiores</h1>
-        <h2 class="tienda__header__subtitle">Conoce todas nuestras cortinas y persianas</h2>
+<div class="tienda">
+    <div class="container migapan">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Tienda</li>
+            </ol>
+        </nav>
     </div>
 
-    <ul class="container tienda__listado">
-        {% for producto in productos %}
-        <li class="tienda__item">
-            <div class="card text-center" style="width: 18rem;">
-                <img src="{% static 'img/panel-japones.jpg' %}" class="card-img-top" alt="...">
-                <p class="producto__descuento"><strong>{{producto.productdiscount}} dcto.</strong></p>
-                <div class="card-body">
-                    <h5 class="card-title"><strong>{{producto.productname}}</strong></h5>
-                    <!-- <p class="card-text">{{producto.productdescription}}</p> -->
-                    <div class="container card-price">
-                        <p class="producto_oldprice"><strong>Antes: </strong><i class="oldprice">{{producto.productoldprice}}</i></p>
-                        <p class="producto__newprice"><strong>Ahora: {{producto.productprice}}</strong></p>
+    <div class="container">
+        <div class="tienda__header text-center">
+            <h1 class="tienda__header--title">Tienda | Decortinas e Interiores</h1>
+            <h2 class="tienda__header__subtitle">Conoce todas nuestras cortinas y persianas</h2>
+        </div>
+
+        <ul class="container tienda__listado">
+            {% for producto in productos %}
+            <li class="tienda__item">
+                <div class="card text-center" style="width: 18rem;">
+                    {% if producto.productimg %}
+                    <img src="{{ producto.productimg.url }}" class="card-img-top" alt="{{producto.productname}}">
+                    {% endif %}
+                    <p class="producto__descuento"><strong>{{producto.productdiscount}} dcto.</strong></p>
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>{{producto.productname}}</strong></h5>
+                        <!-- <p class="card-text">{{producto.productdescription}}</p> -->
+                        <div class="container card-price">
+                            <p class="producto_oldprice"><strong>Antes: </strong><i
+                                    class="oldprice">{{producto.productoldprice}}</i></p>
+                            <p class="producto__newprice"><strong>Ahora: {{producto.productprice}}</strong></p>
+                        </div>
+                        <a href="/tienda/{{producto.producturl}}" class="button__product">Ver más</a>
                     </div>
-                    <a href="/tienda/{{producto.producturl}}" class="button__product">Ver más</a>
                 </div>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
+            </li>
+            {% endfor %}
+        </ul>
 
-    <!-- <h1>{{producto.productname}}</h1> -->
+        <!-- <h1>{{producto.productname}}</h1> -->
 
+    </div>
 </div>
 
 

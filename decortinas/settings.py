@@ -30,7 +30,7 @@ SECRET_KEY = "django-insecure-zxe-nqi+6*4$#1ig*$9^^d2f3d%&m&@i(wp7_+s4fcn)75b*xr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['decortinas.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['decortinas.herokuapp.com', '127.0.0.1', 'www.decortinasypersianas.co', 'decortinasypersianas.co']
 
 
 # Application definition
@@ -81,13 +81,13 @@ WSGI_APPLICATION = "decortinas.wsgi.application"
 
 DATABASES = {
     "default": {
-        #"ENGINE": "django.db.backends.sqlite3",
-        #"NAME": BASE_DIR / "db.sqlite3",
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dfps4ovkaknsi',
-        'USER': 'pwmypzyynkmkyb',
-        'PASSWORD': 'b094e06973aee550800276fa178a4f7d0db3efba6eb560c13dc9b752cf751148',
-        'HOST': 'ec2-3-234-204-26.compute-1.amazonaws.com',
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+        #'ENGINE': 'django.db.backends.postgresql',
+        #'NAME': 'dfps4ovkaknsi',
+        #'USER': 'pwmypzyynkmkyb',
+        #'PASSWORD': 'b094e06973aee550800276fa178a4f7d0db3efba6eb560c13dc9b752cf751148',
+        #'HOST': 'ec2-3-234-204-26.compute-1.amazonaws.com',
     }
 }
 

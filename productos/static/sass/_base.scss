@@ -1,3 +1,7 @@
+html {
+    position: relative;
+}
+
 * {
     font-family: 'Mulish', sans-serif;
 }
@@ -7,6 +11,7 @@ body {
     min-height: calc(100vh - 50px);
     /* ajustar según la altura del footer */
     position: relative;
+    margin: 0px;
 }
 
 .navbar-brand {
@@ -43,4 +48,22 @@ nav {
 
 .carousel {
     margin-top: 100px;
+}
+
+.migapan {
+    nav {
+        .breadcrumb {
+            .breadcrumb-item {
+                a {
+                    color: $Aq;
+                    text-decoration: none;
+
+                    &:hover {
+                        transition: all .6s;
+                        color: $Yl;
+                    }
+                }
+            }
+        }
+    }
 }
