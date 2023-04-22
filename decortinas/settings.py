@@ -81,8 +81,13 @@ WSGI_APPLICATION = "decortinas.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        #"ENGINE": "django.db.backends.sqlite3",
+        #"NAME": BASE_DIR / "db.sqlite3",
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dfps4ovkaknsi',
+        'USER': 'pwmypzyynkmkyb',
+        'PASSWORD': 'b094e06973aee550800276fa178a4f7d0db3efba6eb560c13dc9b752cf751148',
+        'HOST': 'ec2-3-234-204-26.compute-1.amazonaws.com',
     }
 }
 
