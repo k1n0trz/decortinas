@@ -84,13 +84,25 @@ DATABASES = {
     "default": {
         #"ENGINE": "django.db.backends.sqlite3",
         #"NAME": BASE_DIR / "db.sqlite3",
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'l3wrmvkmj4jotlbi',
-        'USER': 'yhvrqwrot3piu21h',
-        'PASSWORD': 'jdblynh6ntgev2up',
-        'HOST': 'x8autxobia7sgh74.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd1mdng60i17cnt',
+        'USER': 'mosdtdqfnkqckc',
+        'PASSWORD': '83247fcf89430837ea7670201175331b2f02fccc957bcf2f0f984ee713fb3f58',
+        'HOST': 'ec2-3-234-204-26.compute-1.amazonaws.com',
     }
 }
+
+# DATABASES = {
+#     "default": {
+#         #"ENGINE": "django.db.backends.sqlite3",
+#         #"NAME": BASE_DIR / "db.sqlite3",
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'l3wrmvkmj4jotlbi',
+#         'USER': 'yhvrqwrot3piu21h',
+#         'PASSWORD': 'jdblynh6ntgev2up',
+#         'HOST': 'x8autxobia7sgh74.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+#     }
+# }
 
 
 # Password validation
