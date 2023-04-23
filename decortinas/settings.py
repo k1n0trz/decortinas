@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'productos' # Trae las tablas para leerlas
+    'productos', # Trae las tablas para leerlas
+    'ckeditor'
 ]
 
 MIDDLEWARE = [
@@ -84,10 +85,10 @@ DATABASES = {
         #"ENGINE": "django.db.backends.sqlite3",
         #"NAME": BASE_DIR / "db.sqlite3",
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dfps4ovkaknsi',
-        'USER': 'pwmypzyynkmkyb',
-        'PASSWORD': 'b094e06973aee550800276fa178a4f7d0db3efba6eb560c13dc9b752cf751148',
-        'HOST': 'ec2-3-234-204-26.compute-1.amazonaws.com',
+        'NAME': 'l3wrmvkmj4jotlbi',
+        'USER': 'yhvrqwrot3piu21h',
+        'PASSWORD': 'jdblynh6ntgev2up',
+        'HOST': 'x8autxobia7sgh74.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     }
 }
 
@@ -129,7 +130,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, '/productos/static')
 STATIC_URL = "/productos/static/"
 
-MEDIA_ROOT = "uploads"
+MEDIA_ROOT = "productos"
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "productos/static/"),)

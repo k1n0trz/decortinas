@@ -1,0 +1,66 @@
+{% extends 'base/index.html' %}
+{% block ogtitle %}{{ ogtitle }}{% endblock %}
+{% block ogdesc %}{{ ogdesc }}{% endblock %}
+{% block oguimg %}{{ oguimg }}{% endblock %}
+{% block ogurls %}{{ ogurl }}{% endblock %}
+{% block ogurlimg %}{{ ogurlimg }}{% endblock %}
+
+{% block mdescription %}{{ mdescription }}{% endblock %}
+{% block keywords %}{{ keywords }}{% endblock %}
+{% block title %}{{ titulo }}{% endblock %}
+
+{% block content %}
+
+<div class="detalle">
+    <div class="container migapan">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="/tienda">Tienda</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{producto.productname}}</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="detalle__header text-center">
+        <h1 class="detalle__header--title"><strong>{{producto.productname}}</strong></h1>
+        <h2 class="detalle__header--subtitle">Cortinas y persianas de la mejor calidad</h2>
+    </div>
+
+    <div class="detalle__body container">
+        {% if producto.productimg %}
+        <img src="{{ producto.productimg.url }}" alt="{{producto.productname}}" class="detalle__body--img">
+        {% endif %}
+        <!-- <p class="producto__descuento"><strong>{{producto.productdiscount}}% dcto.</strong></p> -->
+        <div class="detalle__body--description">
+            <p class="body__description">{{producto.productdescription | safe}}</p>
+            <div class="body__description--prices">
+                <p class="product__discount text-center">
+                    <strong class="producto__descuento text-center">{{producto.productdiscount}}<br>% dcto.</strong>
+                </p>
+                <ul class="product__details">
+                    <li class="product__details--item"><strong class="icon-ok-circled2"></strong> Entrega a domicilio
+                    </li>
+                    <li class="product__details--item"><strong class="icon-ok-circled2"></strong> Pago contraentrega
+                    </li>
+                    <li class="product__details--item"><strong class="icon-ok-circled2"></strong> Instalación sin costo
+                    </li>
+                    <li class="product__details--item"><strong class="icon-ok-circled2"></strong> Asesoría para el
+                        mantenimiento</li>
+                </ul>
+                <p class="producto_oldprice"><strong>Antes: </strong>
+                    <i class="oldprice">${{producto.productoldprice|floatformat:0}} COP</i>
+                </p>
+                <p class="producto__newprice"><strong>Ahora: </strong>
+                    <i class="newprice">${{producto.productprice|floatformat:0}} COP</i>
+                </p>
+            </div>
+            <div class="body__description--footer">
+                <a href="https://bit.ly/wpdecortinas" class="buy__button icon-whatsapp" target="_blank"
+                    rel="nofollow">¡Comprar ahora!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

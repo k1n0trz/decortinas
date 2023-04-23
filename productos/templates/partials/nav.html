@@ -1,7 +1,7 @@
 {% load static %}
 <nav class="navbar bg-body-tertiary fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="{% url 'index' %}">
       <div class="container">
         <img src="{% static 'img/logo-decortinas.png' %}" alt="" class="navbar__brand--img">
       </div>
@@ -30,29 +30,29 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active icon-home" aria-current="page" href="/"> Inicio</a>
+            <a class="nav-link active icon-home" aria-current="page" href="{% url 'index' %}"> Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link icon-cart-plus" href="/tienda"> Tienda</a>
+            <a class="nav-link icon-cart-plus" href="{% url 'tienda' %}"> Tienda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link icon-group" href="/nosotros"> Nosotros</a>
+            <a class="nav-link icon-group" href="{% url 'nosotros' %}"> Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link icon-phone-2" href="/contacto"> Contacto</a>
+            <a class="nav-link icon-phone-2" href="{% url 'contacto' %}"> Contacto</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Otros Servicios
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/servicios">Mantenimiento de cortinas y persianas</a></li>
-              <li><a class="dropdown-item" href="/pauta">Pauta con nosotros</a></li>
+              <li><a class="dropdown-item" href="{% url 'servicios' %}">Mantenimiento de cortinas y persianas</a></li>
+              <li><a class="dropdown-item" href="{% url 'pauta' %}">Pauta con nosotros</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="/cookies">Política de Cookies</a></li>
-              <li><a class="dropdown-item" href="/privacidad">Política de Privacidad</a></li>
+              <li><a class="dropdown-item" href="{% url 'cookies' %}">Política de Cookies</a></li>
+              <li><a class="dropdown-item" href="{% url 'privacy' %}">Política de Privacidad</a></li>
             </ul>
           </li>
         </ul>

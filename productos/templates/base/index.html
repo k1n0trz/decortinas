@@ -11,22 +11,22 @@
         type="application/ld+json">{"@context": "https://schema.org","@type": "Organization","url": "https://decortinasypersianas.co/","contactPoint":[{"@type": "ContactPoint","telephone": "+57-301-634-4239","contactType": "customer service"}],"address": {"@type": "PostalAddress","addressLocality": "Medellín, Colombia","postalCode": "050024","streetAddress": "Cr 62#45b42, Rionegro, Antioquia"},"email": "decortinaseinteriores@gmail.com","member": [{"@type": "Organization"}],"alumni": [{"@type": "Person","name": "Jessica"}],"name": "k1n0c0m","telephone": "( 57 4) 301 634 4239"}</script>
     <!-- Title -->
     <!-- Propiedades OG -->
-    <meta property="og:title" content="Cortinas y Persianas | Decortinas e Interiores en Rionegro">
+    <meta property="og:title" content="{% block ogtitle %}{{ ogtitle }}{% endblock %} | Cortinas y Persianas | Decortinas e Interiores en Rionegro">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.decortinasypersianas.co/">
-    <meta property="og:image" content="https://www.decortinasypersianas.co/static/img/logo-og.jpg">
-    <meta property="og:image:secure_url" content="https://www.decortinasypersianas.co/static/img/logo-og.jpg">
+    <meta property="og:url" content="{% block ogurls %}{{ ogurl }}{% endblock %}">
+    <meta property="og:image" content="{% block ogurlimg %}{{ ogurlimg }}{% endblock %}">
+    <meta property="og:image:secure_url" content="{% block oguimg %}{{ oguimg }}{% endblock %}">
     <meta property="og:image:type" content="image/jpg">
     <meta property="og:local" content="es_LA">
-    <meta property="og:description" content="Cortinas y Persianas Modernas | Instalación sin costo">
+    <meta property="og:description" content="{% block ogdesc %}{{ ogdesc }}{% endblock %} | Cortinas y Persianas Modernas | Instalación sin costo">
     <meta property="og:site_name" content="k1n0c0m">
-    <title>Cortinas y Persianas | Decortinas e Interiores</title>
+    <title>{% block title %}{% endblock %} | Cortinas y Persianas | Decortinas e Interiores</title>
+    <!-- <title>Cortinas y Persianas | Decortinas e Interiores</title> -->
     <meta name="description"
-        content="Cortinas y Persianas Modernas En Rionegro/Antioquia | Instalación sin costo y envíos a todo el país">
+        content="{% block mdescription %}{{ mdescription }}{% endblock %} | Instalación sin costo y envíos a todo el país">
     <meta name="keywords"
-        content="Cortinas y persianas, cortinas, persianas, cortinas modernas, persianas modernas, cortinas en rionegro,
-        rionegro, antioquia, decortinas, interiores, hogar, casa, remodelación">
-        <meta name="author" content="k1n0">
+        content="{% block keywords %}{{ keywords }}{% endblock %}">
+    <meta name="author" content="k1n0">
     <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

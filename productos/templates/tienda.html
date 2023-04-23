@@ -26,14 +26,15 @@
                     {% if producto.productimg %}
                     <img src="{{ producto.productimg.url }}" class="card-img-top" alt="{{producto.productname}}">
                     {% endif %}
-                    <p class="producto__descuento"><strong>{{producto.productdiscount}} dcto.</strong></p>
+                    <p class="producto__descuento"><strong>{{producto.productdiscount}}% dcto.</strong></p>
                     <div class="card-body">
                         <h5 class="card-title"><strong>{{producto.productname}}</strong></h5>
-                        <!-- <p class="card-text">{{producto.productdescription}}</p> -->
                         <div class="container card-price">
                             <p class="producto_oldprice"><strong>Antes: </strong><i
-                                    class="oldprice">{{producto.productoldprice}}</i></p>
-                            <p class="producto__newprice"><strong>Ahora: {{producto.productprice}}</strong></p>
+                                    class="oldprice">${{producto.productoldprice|floatformat:0}} COP</i></p>
+                            <p class="producto__newprice"><strong>Ahora: </strong><i
+                                    class="newprice">${{producto.productprice|floatformat:0}} COP</i>
+                            </p>
                         </div>
                         <a href="/tienda/{{producto.producturl}}" class="button__product">Ver más</a>
                     </div>
