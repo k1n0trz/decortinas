@@ -32,7 +32,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['decortinas.herokuapp.com', '127.0.0.1', 'www.decortinasypersianas.co', 'decortinasypersianas.co']
 
-json_url = os.environ.get('https://decortinas.herokuapp.com/static/json/instant-jetty-384913-83fd70907d3d.json')
 # Application definition
 
 INSTALLED_APPS = [
@@ -93,24 +92,6 @@ DATABASES = {
     }
 }
 
-DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
-GS_BUCKET_NAME = 'imagenes_bucket_decortinas'
-GS_PROJECT_ID = 'instant-jetty-384913'
-GS_JSON_KEY_FILE = '/static/json/instant-jetty-384913-83fd70907d3d.json'
-
-# DATABASES = {
-#     "default": {
-#         #"ENGINE": "django.db.backends.sqlite3",
-#         #"NAME": BASE_DIR / "db.sqlite3",
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'l3wrmvkmj4jotlbi',
-#         'USER': 'yhvrqwrot3piu21h',
-#         'PASSWORD': 'jdblynh6ntgev2up',
-#         'HOST': 'x8autxobia7sgh74.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-#     }
-# }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
@@ -159,13 +140,6 @@ except ImportError:
     pass
 
 django_heroku.settings(locals())
-
-# Añade la siguiente línea al final del archivo para definir una función para manejar las excepciones
-def page_not_found_view(request, exception):
-    return render(request, '404.html', status=404)
-
-# La siguiente línea agrega la vista personalizada para manejar excepciones de página no encontrada
-handler404 = 'settings.page_not_found_view'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

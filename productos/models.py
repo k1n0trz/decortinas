@@ -26,12 +26,7 @@ class Product(models.Model): # Crea la tabla product en db
     productdiscount = models.IntegerField(verbose_name="Valor de descuento")
     producturl = models.CharField(max_length=200, verbose_name="Url producto detalle")
     productdescription = RichTextField()
-    productimg = models.ImageField(
-        upload_to='uploads/',
-        storage=GoogleCloudStorage(),
-        verbose_name='Imagen principal del Producto'
-    )
-    # productimg = models.ImageField(upload_to='static/img/uploads/', verbose_name="Imagen principal del Producto")
+    productimg = models.ImageField(upload_to='static/img/uploads/', verbose_name="Imagen principal del Producto")
     asesor = models.ForeignKey(Asesor, on_delete=models.SET_NULL, null=True)
     productprice = models.IntegerField(verbose_name="Precio de venta", blank=True, null=True, editable=False)
 
