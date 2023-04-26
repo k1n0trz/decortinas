@@ -2,22 +2,21 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from .models import Asesor, Product
 from django.shortcuts import get_object_or_404, render
+import json
+# import json
 
-# Create your views here.
-def index(request):
-    return render(request, 'home.html')
-
-def contacto(request):
-    return render(request, 'contacto.html')
-
-def nosotros(request):
-    return render(request, 'nosotros.html')
+# with open('productos/static/json/instant-jetty-384913-83fd70907d3d.json') as f:
+#     data = json.load(f)
 
 def tienda(request):
-    #tienda = list(Asesor.objects.values())
+    # Lee el contenido del archivo JSON
+    with open('productos/static/json/instant-jetty-384913-83fd70907d3d.json', 'r') as f:
+        data = json.load(f)
+    # Resto del código para la función de vista
     productos = Product.objects.all()
     return render(request, 'tienda.html', {
-        'productos': productos
+        'productos': productos,
+        'data': data,
     })
 
 # def producto(request, producturl):
@@ -49,3 +48,12 @@ def cookies(request):
 
 def privacy(request):
     return render(request, 'privacy.html')
+
+def index(request):
+    return render(request, 'home.html')
+
+def contacto(request):
+    return render(request, 'contacto.html')
+
+def nosotros(request):
+    return render(request, 'nosotros.html')
