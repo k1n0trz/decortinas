@@ -92,6 +92,11 @@ DATABASES = {
     }
 }
 
+DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+GS_BUCKET_NAME = 'imagenes_bucket_decortinas'
+GS_PROJECT_ID = 'instant-jetty-384913'
+GS_JSON_KEY_FILE = '/static/json/instant-jetty-384913-83fd70907d3d.json'
+
 # DATABASES = {
 #     "default": {
 #         #"ENGINE": "django.db.backends.sqlite3",
