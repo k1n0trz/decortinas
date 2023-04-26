@@ -32,7 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['decortinas.herokuapp.com', '127.0.0.1', 'www.decortinasypersianas.co', 'decortinasypersianas.co']
 
-json_url = os.environ.get('JSON_URL')
+json_url = os.environ.get('https://decortinas.herokuapp.com/static/json/instant-jetty-384913-83fd70907d3d.json')
 # Application definition
 
 INSTALLED_APPS = [
