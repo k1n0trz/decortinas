@@ -54,6 +54,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'django.middleware.common.BrokenLinkEmailsMiddleware',
 ]
 
 ROOT_URLCONF = "decortinas.urls"
@@ -158,6 +159,13 @@ except ImportError:
     pass
 
 django_heroku.settings(locals())
+
+# Añade la siguiente línea al final del archivo para definir una función para manejar las excepciones
+def page_not_found_view(request, exception):
+    return render(request, '404.html', status=404)
+
+# La siguiente línea agrega la vista personalizada para manejar excepciones de página no encontrada
+handler404 = 'settings.page_not_found_view'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
