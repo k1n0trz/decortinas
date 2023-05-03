@@ -31,6 +31,8 @@ class Product(models.Model): # Crea la tabla product en db
     producturl = models.CharField(max_length=200, verbose_name="Url producto detalle")
     productdescription = RichTextField()
     productimg = models.ImageField(upload_to='imagenes-decortinas/', verbose_name="Imagen principal del Producto")
+    gallerya = models.ImageField(upload_to='imagenes-decortinas/', verbose_name="Imagen secundaria del Producto", blank=True)
+    galleryb = models.ImageField(upload_to='imagenes-decortinas/', verbose_name="Imagen final del Producto", blank=True)
     # productimg = models.ImageField(upload_to='static/img/uploads/', verbose_name="Imagen principal del Producto")
     asesor = models.ForeignKey(Asesor, on_delete=models.SET_NULL, null=True)
     productprice = models.IntegerField(verbose_name="Precio de venta", blank=True, null=True, editable=False)
