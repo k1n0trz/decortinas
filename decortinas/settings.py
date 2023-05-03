@@ -32,6 +32,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['decortinas.herokuapp.com', '127.0.0.1', 'www.decortinasypersianas.co', 'decortinasypersianas.co']
 
+# Amazon info
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_ACCESS_KEY_ID = '755932656473'
+AWS_SECRET_ACCESS_KEY = '5e65d16180a4f725018ae2431eea70f46458195b8c3d6deddd876b7b4288837f'
+AWS_STORAGE_BUCKET_NAME = 'imagenes-decortinas'
+AWS_S3_REGION_NAME = 'América del Sur (São Paulo) sa-east-1'
+AWS_DEFAULT_ACL = 'public-read'
+
 # Application definition
 
 INSTALLED_APPS = [

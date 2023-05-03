@@ -1,6 +1,6 @@
 from django.db import models
 from ckeditor.fields import RichTextField
-from storages.backends.gcloud import GoogleCloudStorage
+from storages.backends.s3boto3 import S3Boto3Storage
 
 # Create your models here.
 class Asesor(models.Model):
@@ -8,6 +8,10 @@ class Asesor(models.Model):
 
     def __str__(self):
         return self.name
+
+class S3ProductImage(S3Boto3Storage):
+    location = 'imagenes-decortinas'
+    file_overwrite = False
 
 class Product(models.Model): # Crea la tabla product en db
     # Elementos del header del producto
@@ -26,7 +30,8 @@ class Product(models.Model): # Crea la tabla product en db
     productdiscount = models.IntegerField(verbose_name="Valor de descuento")
     producturl = models.CharField(max_length=200, verbose_name="Url producto detalle")
     productdescription = RichTextField()
-    productimg = models.ImageField(upload_to='static/img/uploads/', verbose_name="Imagen principal del Producto")
+    productimg = models.ImageField(upload_to='imagenes-decortinas/', verbose_name="Imagen principal del Producto")
+    # productimg = models.ImageField(upload_to='static/img/uploads/', verbose_name="Imagen principal del Producto")
     asesor = models.ForeignKey(Asesor, on_delete=models.SET_NULL, null=True)
     productprice = models.IntegerField(verbose_name="Precio de venta", blank=True, null=True, editable=False)
 
