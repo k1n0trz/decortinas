@@ -4,4 +4,4 @@ obj
 cache
 node_modules
 local_settings.py
-settings.py
+decortinas/settings.py
