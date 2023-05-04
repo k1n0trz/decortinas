@@ -1,2 +1,1 @@
-release: python manage.py migrate
-web: gunicorn decortinas.wsgi
+web: gunicorn decortinas.wsgi --log-file -
