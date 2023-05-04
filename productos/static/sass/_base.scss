@@ -14,18 +14,19 @@ body {
     margin: 0px;
 }
 
-.navbar-brand {
-    .navbar__brand--img {
-        width: 80px;
-    }
-}
-
 nav {
     .navbar__brand--img {
         width: 80px;
     }
 
     .container-fluid {
+
+        .navbar-brand {
+            .navbar__brand--img {
+                width: 80px;
+            }
+        }
+
         .navbar-right {
             display: flex;
             align-items: center;

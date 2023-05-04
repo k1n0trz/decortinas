@@ -1,0 +1,28 @@
+.contacto {
+    margin-top: 40px;
+
+    .contacto__header {
+        .contacto__header--title {
+            strong {
+                color: $Aq;
+            }
+        }
+    }
+
+    .contacto__body {
+        background: $Aq;
+        margin-top: 40px;
+        width: 100%;
+        height: 540px;
+        display: flex;
+        align-items: center;
+
+        .contacto__body--map {
+            width: 100%;
+            iframe {
+                width: 100%;
+                height: 440px;
+            }
+        }
+    }
+}

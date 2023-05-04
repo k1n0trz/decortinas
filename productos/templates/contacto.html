@@ -1,8 +1,39 @@
+<meta name="description"
+        content="Contacto 📱 Cortinas y Persianas | Instalación sin costo y envíos a todo el país">
+<title>Contacto 📱 Cortinas y Persianas | Decortinas e Interiores</title>
 {% extends 'base/index.html' %}
 {% block content %}
+{% load static %}
+<div class="img__baner">
+    <img src="{% static 'img/banner-contacto.jpg' %}" alt="Contacto Decortinas" class="img__banner--img">
+    <img src="{% static 'img/banner-contacto-mov.jpg' %}" alt="Contacto Decortinas" class="img__banner--imgmov">
+</div>
 
-<div class="container">
-    <h1 style="margin-top: 140px;">Contáctanos | Decortinas e Interiores</h1>
+<div class="contacto">
+    <div class="container migapan">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="contacto__header text-center container">
+        <h1 class="contacto__header--title"><strong>Contáctanos | Decortinas e Interiores</strong></h1>
+        <h2 class="contacto__header--subtitle">Encuéntranos en Rionegro, Antioquia</h2>
+    </div>
+
+    <div class="contacto__body">
+        <div class="contacto__body--map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15867.458955452865!2d-75.39067463423301!3d6.1488617551187925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e469fecc02d2d7d%3A0xc28c86da7239fb2e!2sCortinas%20y%20persianas%20Decortinas!5e0!3m2!1ses-419!2sco!4v1683239816231!5m2!1ses-419!2sco"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    {% include 'partials/comments.html' %}
 </div>
 
 {% endblock %}

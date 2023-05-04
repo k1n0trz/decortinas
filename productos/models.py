@@ -17,6 +17,8 @@ class Product(models.Model): # Crea la tabla product en db
     # Elementos del header del producto
     productmetadesc = models.CharField(max_length=200, verbose_name="Meta descripción del Producto")
     productkeywords = models.CharField(max_length=200, verbose_name="Palabras clave del Producto")
+    productbanner = models.ImageField(upload_to='imagenes-decortinas/', verbose_name="Imagen Banner del Producto", default='/productos/static/img/default.jpg')
+    productbannermov = models.ImageField(upload_to='imagenes-decortinas/', verbose_name="Imagen Banner del Producto en Móvil", default='/productos/static/img/default-mov.jpg')
     # Elementos OG del producto
     productogdesc = models.CharField(max_length=200, verbose_name="Descripción OG del Producto")
     productogtitle = models.CharField(max_length=200, verbose_name="Titulo OG del Producto")

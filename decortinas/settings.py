@@ -15,6 +15,7 @@ import os
 import ssl
 
 import django_heroku
+from dotenv import load_dotenv
 
 from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -33,7 +34,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['decortinas.herokuapp.com', '127.0.0.1', 'www.decortinasypersianas.co', 'decortinasypersianas.co']
 
 # Amazon info
-
+load_dotenv()
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
 AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
@@ -91,16 +92,18 @@ WSGI_APPLICATION = "decortinas.wsgi.application"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    "default": {
+    'default': {
         #"ENGINE": "django.db.backends.sqlite3",
         #"NAME": BASE_DIR / "db.sqlite3",
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd1mdng60i17cnt',
-        'USER': 'mosdtdqfnkqckc',
-        'PASSWORD': '83247fcf89430837ea7670201175331b2f02fccc957bcf2f0f984ee713fb3f58',
-        'HOST': 'ec2-3-234-204-26.compute-1.amazonaws.com',
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT'),
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

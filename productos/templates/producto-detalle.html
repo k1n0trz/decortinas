@@ -11,12 +11,22 @@
 
 {% block content %}
 
+
+<div class="img__baner">
+    {% if producto.productbanner %}
+    <img src="{{ producto.productbanner.url }}" alt="{{producto.productname}}" class="img__banner--img">
+    {% endif %}
+    {% if producto.productbannermov %}
+    <img src="{{ producto.productbannermov.url }}" alt="{{producto.productname}}" class="img__banner--imgmov">
+    {% endif %}
+</div>
+
 <div class="detalle">
     <div class="container migapan">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Inicio</a></li>
-                <li class="breadcrumb-item"><a href="/tienda">Tienda</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'tienda' %}">Tienda</a></li>
                 <li class="breadcrumb-item active" aria-current="page">{{producto.productname}}</li>
             </ol>
         </nav>
@@ -94,5 +104,7 @@
         </div>
     </div>
 </div>
+
+{% include 'partials/promo.html' %}
 
 {% endblock %}
