@@ -1,0 +1,85 @@
+.promo {
+    background: $Aq;
+    color: $Bl;
+
+    .promo__header {
+        text-align: center;
+        padding-top: 30px;
+
+        .promo__header--title {
+            font-size: 44px;
+        }
+
+        .promo__header--subtitle {
+            font-size: 34px;
+        }
+    }
+
+    .promo__body {
+        .promo__body--link {
+            width: 100%;
+
+            .promo__body--img {
+                width: 100%;
+            }
+        }
+
+        .container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+
+            .promo__body--btn {
+                padding: 10px;
+                border-radius: 10px;
+                background: $Gr;
+                color: $Bl;
+                text-decoration: none;
+
+                &:hover {
+                    transition: all .6s;
+                    background: $Yl;
+                }
+            }
+        }
+    }
+
+    .promo__footer {
+        margin-top: 40px;
+
+        .pf__header {
+            display: flex;
+            justify-content: center;
+
+            .pf__header--title {
+                font-size: 34px;
+            }
+        }
+
+        .promo__footer--counter {
+            display: flex;
+            justify-content: center;
+
+            .contador {
+                display: flex;
+                justify-content: space-around;
+                width: 30%;
+                font-size: 20px;
+
+                .cartel {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 10px;
+
+                    .space {
+                        border: 2px solid $Bl;
+                        border-radius: 6px;
+                        background: $Gr;
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

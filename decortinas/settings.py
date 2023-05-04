@@ -17,6 +17,9 @@ import ssl
 import django_heroku
 
 from pathlib import Path
+import mimetypes
+
+mimetypes.add_type("text/javascript", ".js", True)
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -63,6 +66,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     'django.middleware.common.BrokenLinkEmailsMiddleware',
+    'django.middleware.common.CommonMiddleware'
 ]
 
 ROOT_URLCONF = "decortinas.urls"
@@ -91,13 +95,13 @@ WSGI_APPLICATION = "decortinas.wsgi.application"
 
 DATABASES = {
     "default": {
-        #"ENGINE": "django.db.backends.sqlite3",
-        #"NAME": BASE_DIR / "db.sqlite3",
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd1mdng60i17cnt',
-        'USER': 'mosdtdqfnkqckc',
-        'PASSWORD': '83247fcf89430837ea7670201175331b2f02fccc957bcf2f0f984ee713fb3f58',
-        'HOST': 'ec2-3-234-204-26.compute-1.amazonaws.com',
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+        #'ENGINE': 'django.db.backends.postgresql',
+        #'NAME': 'd1mdng60i17cnt',
+        #'USER': 'mosdtdqfnkqckc',
+        #'PASSWORD': '83247fcf89430837ea7670201175331b2f02fccc957bcf2f0f984ee713fb3f58',
+        #'HOST': 'ec2-3-234-204-26.compute-1.amazonaws.com',
     }
 }
 
