@@ -1454,6 +1454,9 @@ footer .atributo .atributo__k1n0--enlace:hover {
   margin: 20px;
   text-align: center;
 }
+.detalle .detalle__body .carousel .img__carousel {
+  width: 100%;
+}
 @media (min-width: 300px) and (max-width: 820px) {
   .detalle .detalle__body .carousel {
     display: block;

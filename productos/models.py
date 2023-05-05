@@ -58,7 +58,7 @@ class Pagina(models.Model):
     pagebanner = models.ImageField(upload_to='imagenes-decortinas/', verbose_name="Imagen Banner de la página", default='/productos/static/img/default.jpg')
     pagebannermov = models.ImageField(upload_to='imagenes-decortinas/', verbose_name="Imagen Banner de la página en Móvil", default='/productos/static/img/default-mov.jpg')
     pageogdesc = models.CharField(max_length=200, verbose_name="Descripción OG de la página")
-    pageogtitle = RichTextField(verbose_name="Palabras clave de la página")
+    pageogtitle = models.CharField(max_length=200, verbose_name="Título OG de la página")
     pageogurl = models.CharField(max_length=200, verbose_name="Url OG de la página")
     pageogimg = models.CharField(max_length=200, verbose_name="Url OG Microformato de la página")
     pageogurlsec = models.CharField(max_length=200, verbose_name="Url OG Segura de la página")

@@ -42,6 +42,10 @@
             margin: 20px;
             text-align: center;
 
+            .img__carousel {
+                width: 100%;
+            }
+
             @media (min-width: 300px) and (max-width: 820px) {
                 display: block;
                 width: 100%;
