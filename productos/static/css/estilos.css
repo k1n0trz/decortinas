@@ -1465,6 +1465,9 @@ footer .atributo .atributo__k1n0--enlace:hover {
   font-weight: bolder;
   font-size: 18px;
 }
+.detalle .detalle__body .detalle__body--description .body__description--prices .producto__newprice .priceadv {
+  font-size: 12px;
+}
 .detalle .detalle__body .detalle__body--description .body__description--prices .producto__newprice strong {
   color: #009292;
 }
