@@ -34,13 +34,16 @@
                         {% if producto.productoldprice > 0 %}
                         <div class="container card-price">
                             <p class="producto_oldprice"><strong>Antes: </strong><i
-                                    class="oldprice">${{producto.productoldprice|floatformat:0}} COP</i></p>
+                                    class="oldprice">${{producto.productoldprice|floatformat:0}} COP (m²)</i></p>
                             <p class="producto__newprice"><strong>Ahora: </strong><i
-                                    class="newprice">${{producto.productprice|floatformat:0}} COP</i>
+                                    class="newprice">${{producto.productprice|floatformat:0}} COP (m²)</i>
                             </p>
                         </div>
                         {% else %}
-                        <p class="producto__else">Consulta precios vía WhatsApp:</p>
+                        <div class="container card-price">
+                            <p class="producto__else"><strong>Consulta precios vía <a href="https://bit.ly/wpdecortinas"
+                                target="_blank" rel="nofollow" class="producto__else--wp">WhatsApp</a></strong></p>
+                        </div>
                         {% endif %}
                         <a href="/tienda/{{producto.producturl}}" class="button__product">Ver más</a>
                     </div>

@@ -48,6 +48,18 @@
                                 color: $Aq;
                             }
                         }
+
+                        .producto__else {
+                            .producto__else--wp {
+                                color: $Aq;
+                                text-decoration: none;
+
+                                &:hover {
+                                    transition: all .6s;
+                                    color: $Yl;
+                                }
+                            }
+                        }
                     }
 
                     .button__product {

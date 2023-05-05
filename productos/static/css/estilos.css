@@ -1386,6 +1386,14 @@ footer .atributo .atributo__k1n0--enlace:hover {
 .tienda .tienda__listado .tienda__item .card .card-body .card-price .producto__newprice strong {
   color: #009292;
 }
+.tienda .tienda__listado .tienda__item .card .card-body .card-price .producto__else .producto__else--wp {
+  color: #009292;
+  text-decoration: none;
+}
+.tienda .tienda__listado .tienda__item .card .card-body .card-price .producto__else .producto__else--wp:hover {
+  transition: all 0.6s;
+  color: #F3A817;
+}
 .tienda .tienda__listado .tienda__item .card .card-body .button__product {
   width: 60%;
   padding: 10px;
@@ -1442,7 +1450,7 @@ footer .atributo .atributo__k1n0--enlace:hover {
   align-items: center;
 }
 .detalle .detalle__body .carousel {
-  width: 40%;
+  width: 50%;
   margin: 20px;
   text-align: center;
 }
