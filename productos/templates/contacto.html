@@ -12,8 +12,10 @@
 {% block content %}
 {% load static %}
 <div class="img__baner">
-    <img src="{% static 'img/banner-contacto.jpg' %}" alt="Contacto Decortinas" class="img__banner--img">
-    <img src="{% static 'img/banner-contacto-mov.jpg' %}" alt="Contacto Decortinas" class="img__banner--imgmov">
+    {% if pagebanner %}
+    <img src="{{ pagebanner.url }}" alt="{{ pagename }} Decortinas e Interiores" class="img__banner--img">
+    {% endif %}
+    <img src="{{ pagebannermov.url }}" alt="{{ pagename }} Decortinas e Interiores" class="img__banner--imgmov">
 </div>
 
 <div class="contacto">
@@ -21,14 +23,14 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+                <li class="breadcrumb-item active" aria-current="page">{{ pagename }}</li>
             </ol>
         </nav>
     </div>
 
     <div class="contacto__header text-center container">
-        <h1 class="contacto__header--title"><strong>Contáctanos | Decortinas e Interiores</strong></h1>
-        <h2 class="contacto__header--subtitle">Encuéntranos en Rionegro, Antioquia</h2>
+        <h1 class="contacto__header--title"><strong>{{ pagetitle }}</strong></h1>
+        <h2 class="contacto__header--subtitle">{{ pageslogan }}</h2>
     </div>
 
     <div class="contacto__body">

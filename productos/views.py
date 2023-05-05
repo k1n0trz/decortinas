@@ -20,7 +20,7 @@ def tienda(request):
 def producto(request, producturl):
     # Buscar el objeto Producto correspondiente al producturl
     producto = get_object_or_404(Product, producturl=producturl)
-    titulo = producto.productname
+    titulo = producto.productogtitle
     ogtitle = producto.productogtitle
     ogdesc = producto.productogdesc
     keywords = producto.productkeywords
@@ -48,6 +48,11 @@ def index(request):
 
 def contacto(request):
     pagina_contacto = get_object_or_404(Pagina, pagename='Contacto')
+    pageslogan = pagina_contacto.pageslogan
+    pagetitle = pagina_contacto.pagetitle
+    pagename = pagina_contacto.pagename
+    pagebanner = pagina_contacto.pagebanner
+    pagebannermov = pagina_contacto.pagebannermov
     pagemetatitle = pagina_contacto.pagemetatitle
     pageogtitle = pagina_contacto.pageogtitle
     pageogdesc = pagina_contacto.pageogdesc
@@ -56,7 +61,7 @@ def contacto(request):
     pageogurl = pagina_contacto.pageogurl
     pageogimg = pagina_contacto.pageogimg
     pageogurlsec = pagina_contacto.pageogurlsec
-    return render(request, 'contacto.html', {'pagina': pagina_contacto, 'pagemetatitle': pagemetatitle, 'pageogtitle': pageogtitle, 'pageogdesc': pageogdesc, 'pagekeywords': pagekeywords, 'pagemetadesc': pagemetadesc, 'pageogurl': pageogurl, 'pageogimg': pageogimg, 'pageogurlsec': pageogurlsec})
+    return render(request, 'contacto.html', {'pagina': pagina_contacto, 'pagemetatitle': pagemetatitle, 'pageogtitle': pageogtitle, 'pageogdesc': pageogdesc, 'pagekeywords': pagekeywords, 'pagemetadesc': pagemetadesc, 'pageogurl': pageogurl, 'pageogimg': pageogimg, 'pageogurlsec': pageogurlsec, 'pagebanner': pagebanner, 'pagename': pagename, 'pagebannermov': pagebannermov, 'pagetitle': pagetitle, 'pageslogan': pageslogan})
 
 # def contacto(request):
 #      return render(request, 'contacto.html')
