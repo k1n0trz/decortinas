@@ -31,6 +31,7 @@
                     {% endif %}
                     <div class="card-body">
                         <h5 class="card-title"><strong>{{producto.productname}}</strong></h5>
+                        {% if producto.productoldprice > 0 %}
                         <div class="container card-price">
                             <p class="producto_oldprice"><strong>Antes: </strong><i
                                     class="oldprice">${{producto.productoldprice|floatformat:0}} COP</i></p>
@@ -38,6 +39,9 @@
                                     class="newprice">${{producto.productprice|floatformat:0}} COP</i>
                             </p>
                         </div>
+                        {% else %}
+                        <p class="producto__else">Consulta precios vía WhatsApp:</p>
+                        {% endif %}
                         <a href="/tienda/{{producto.producturl}}" class="button__product">Ver más</a>
                     </div>
                 </div>
