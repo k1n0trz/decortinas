@@ -26,7 +26,9 @@
                     {% if producto.productimg %}
                     <img src="{{ producto.productimg.url }}" class="card-img-top" alt="{{producto.productname}}">
                     {% endif %}
+                    {% if producto.productdiscount > 0 %}
                     <p class="producto__descuento"><strong>{{producto.productdiscount}}% dcto.</strong></p>
+                    {% endif %}
                     <div class="card-body">
                         <h5 class="card-title"><strong>{{producto.productname}}</strong></h5>
                         <div class="container card-price">
