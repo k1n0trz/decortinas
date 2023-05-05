@@ -9,8 +9,34 @@ from django.shortcuts import get_object_or_404, render
 def tienda(request):
     # Resto del código para la función de vista
     productos = Product.objects.all()
+    pagina_tienda = get_object_or_404(Pagina, pagename='Tienda')
+    pageslogan = pagina_tienda.pageslogan
+    pagetitle = pagina_tienda.pagetitle
+    pagename = pagina_tienda.pagename
+    pagebanner = pagina_tienda.pagebanner
+    pagebannermov = pagina_tienda.pagebannermov
+    pagemetatitle = pagina_tienda.pagemetatitle
+    pageogtitle = pagina_tienda.pageogtitle
+    pageogdesc = pagina_tienda.pageogdesc
+    pagekeywords = pagina_tienda.pagekeywords
+    pagemetadesc = pagina_tienda.pagemetadesc
+    pageogurl = pagina_tienda.pageogurl
+    pageogimg = pagina_tienda.pageogimg
+    pageogurlsec = pagina_tienda.pageogurlsec
     return render(request, 'tienda.html', {
         'productos': productos,
+        'pagemetatitle': pagemetatitle,
+        'pageogtitle': pageogtitle,
+        'pageogdesc': pageogdesc,
+        'pagekeywords': pagekeywords,
+        'pagemetadesc': pagemetadesc,
+        'pageogurl': pageogurl, 'pageogimg': pageogimg,
+        'pageogurlsec': pageogurlsec,
+        'pagebanner': pagebanner,
+        'pagename': pagename,
+        'pagebannermov': pagebannermov,
+        'pagetitle': pagetitle,
+        'pageslogan': pageslogan
     })
 
 # def producto(request, producturl):
@@ -29,7 +55,15 @@ def producto(request, producturl):
     ogimg = producto.productogimg
     ogurlimg = producto.productogurlsec
     # Renderizar la plantilla de detalle del producto y pasar el objeto producto como contexto
-    return render(request, 'producto-detalle.html',{'producto': producto, 'titulo': titulo, 'keywords':keywords, 'mdescription':mdescription, 'ogurl':ogurl, 'ogimg':ogimg, 'ogtitle':ogtitle, 'ogurlimg':ogurlimg, 'ogdesc':ogdesc})
+    return render(request, 'producto-detalle.html',{
+        'producto': producto,
+        'titulo': titulo,
+        'keywords':keywords,
+        'mdescription':mdescription,
+        'ogurl':ogurl, 'ogimg':ogimg,
+        'ogtitle':ogtitle,
+        'ogurlimg':ogurlimg,
+        'ogdesc':ogdesc})
 
 def servicios(request):
     return render(request, 'servicios.html')
@@ -61,10 +95,49 @@ def contacto(request):
     pageogurl = pagina_contacto.pageogurl
     pageogimg = pagina_contacto.pageogimg
     pageogurlsec = pagina_contacto.pageogurlsec
-    return render(request, 'contacto.html', {'pagina': pagina_contacto, 'pagemetatitle': pagemetatitle, 'pageogtitle': pageogtitle, 'pageogdesc': pageogdesc, 'pagekeywords': pagekeywords, 'pagemetadesc': pagemetadesc, 'pageogurl': pageogurl, 'pageogimg': pageogimg, 'pageogurlsec': pageogurlsec, 'pagebanner': pagebanner, 'pagename': pagename, 'pagebannermov': pagebannermov, 'pagetitle': pagetitle, 'pageslogan': pageslogan})
-
-# def contacto(request):
-#      return render(request, 'contacto.html')
+    return render(request, 'contacto.html', {
+        'pagina': pagina_contacto,
+        'pagemetatitle': pagemetatitle,
+        'pageogtitle': pageogtitle,
+        'pageogdesc': pageogdesc,
+        'pagekeywords': pagekeywords,
+        'pagemetadesc': pagemetadesc,
+        'pageogurl': pageogurl,
+        'pageogimg': pageogimg,
+        'pageogurlsec': pageogurlsec,
+        'pagebanner': pagebanner,
+        'pagename': pagename,
+        'pagebannermov': pagebannermov,
+        'pagetitle': pagetitle,
+        'pageslogan': pageslogan})
 
 def nosotros(request):
-    return render(request, 'nosotros.html')
+    pagina_nosotros = get_object_or_404(Pagina, pagename='Nosotros')
+    pageslogan = pagina_nosotros.pageslogan
+    pagetitle = pagina_nosotros.pagetitle
+    pagename = pagina_nosotros.pagename
+    pagebanner = pagina_nosotros.pagebanner
+    pagebannermov = pagina_nosotros.pagebannermov
+    pagemetatitle = pagina_nosotros.pagemetatitle
+    pageogtitle = pagina_nosotros.pageogtitle
+    pageogdesc = pagina_nosotros.pageogdesc
+    pagekeywords = pagina_nosotros.pagekeywords
+    pagemetadesc = pagina_nosotros.pagemetadesc
+    pageogurl = pagina_nosotros.pageogurl
+    pageogimg = pagina_nosotros.pageogimg
+    pageogurlsec = pagina_nosotros.pageogurlsec
+    return render(request, 'nosotros.html', {
+        'pagina': pagina_nosotros,
+        'pagemetatitle': pagemetatitle,
+        'pageogtitle': pageogtitle,
+        'pageogdesc': pageogdesc,
+        'pagekeywords': pagekeywords,
+        'pagemetadesc': pagemetadesc,
+        'pageogurl': pageogurl,
+        'pageogimg': pageogimg,
+        'pageogurlsec': pageogurlsec,
+        'pagebanner': pagebanner,
+        'pagename': pagename,
+        'pagebannermov': pagebannermov,
+        'pagetitle': pagetitle,
+        'pageslogan': pageslogan})

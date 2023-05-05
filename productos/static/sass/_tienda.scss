@@ -1,5 +1,13 @@
 .tienda {
-    margin-top: 140px;
+    margin-top: 80px;
+
+    .container {
+        .tienda__header {
+            .tienda__header--title {
+                color: $Aq;
+            }
+        }
+    }
 
     .tienda__listado {
         margin-top: 40px;

@@ -1344,7 +1344,10 @@ footer .atributo .atributo__k1n0--enlace:hover {
   }
 }
 .tienda {
-  margin-top: 140px;
+  margin-top: 80px;
+}
+.tienda .container .tienda__header .tienda__header--title {
+  color: #009292;
 }
 .tienda .tienda__listado {
   margin-top: 40px;
@@ -1604,7 +1607,55 @@ footer .atributo .atributo__k1n0--enlace:hover {
 }
 
 .nosotros {
-  margin-top: 120px;
+  margin-top: 60px;
+}
+.nosotros .nosotros__header .nosotros__header--title {
+  color: #009292;
+}
+.nosotros .nosotros__body {
+  margin-top: 40px;
+}
+.nosotros .nosotros__body .nosotros__body--item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nosotros .nosotros__body .nosotros__body--item .nb__item--img {
+  width: 20%;
+  margin: 20px;
+  border: 6px solid #009292;
+  border-radius: 100%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.nosotros .nosotros__body .nosotros__body--item .nb__item--img--mov {
+  display: none;
+  border: 6px solid #009292;
+  border-radius: 100%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.nosotros .nosotros__body .nosotros__body--item .nb__item--txt,
+.nosotros .nosotros__body .nosotros__body--item .nb__item--txta {
+  width: 40%;
+}
+.nosotros .nosotros__body .nosotros__body--item .nb__item--txta {
+  text-align: end;
+}
+@media (min-width: 300px) and (max-width: 820px) {
+  .nosotros .nosotros__body .nosotros__body--item {
+    display: block;
+  }
+  .nosotros .nosotros__body .nosotros__body--item .nb__item--img {
+    display: none;
+  }
+  .nosotros .nosotros__body .nosotros__body--item .nb__item--img--mov {
+    display: block;
+  }
+  .nosotros .nosotros__body .nosotros__body--item .nb__item--txt,
+  .nosotros .nosotros__body .nosotros__body--item .nb__item--txta {
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+  }
 }
 
 .contacto {

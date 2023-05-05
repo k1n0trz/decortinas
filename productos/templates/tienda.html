@@ -1,22 +1,37 @@
-<title>Tienda | Cortinas y Persianas | Decortinas e Interiores</title>
 {% extends 'base/index.html' %}
-{% load static %}
-{% block content %}
+{% block ogtitle %}{{ pageogtitle }}{% endblock %}
+{% block ogdesc %}{{ pageogdesc }}{% endblock %}
+{% block oguimg %}{{ pageogimg }}{% endblock %}
+{% block ogurls %}{{ pageogurl }}{% endblock %}
+{% block ogurlimg %}{{ pageogurlsec }}{% endblock %}
 
+{% block mdescription %}{{ pagemetadesc }}{% endblock %}
+{% block keywords %}{{ pagekeywords }}{% endblock %}
+{% block title %}{{ pagemetatitle }}{% endblock %}
+{% block content %}
+{% load static %}
+<div class="img__baner">
+    {% if pagebanner %}
+    <img src="{{ pagebanner.url }}" alt="{{ pagename }} Decortinas y Persianas" class="img__banner--img">
+    {% endif %}
+    {% if pagebannermov %}
+    <img src="{{ pagebannermov.url }}" alt="{{ pagename }} Decortinas y Persianas" class="img__banner--imgmov">
+    {% endif %}
+</div>
 <div class="tienda">
     <div class="container migapan">
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Tienda</li>
+                <li class="breadcrumb-item active" aria-current="page">{{ pagename }}</li>
             </ol>
         </nav>
     </div>
 
     <div class="container">
         <div class="tienda__header text-center">
-            <h1 class="tienda__header--title">Tienda | Decortinas e Interiores</h1>
-            <h2 class="tienda__header__subtitle">Conoce todas nuestras cortinas y persianas</h2>
+            <h1 class="tienda__header--title"><strong>{{ pagetitle }}</strong></h1>
+            <h2 class="tienda__header__subtitle">{{ pageslogan }}</h2>
         </div>
 
         <ul class="container tienda__listado">
@@ -51,11 +66,8 @@
             </li>
             {% endfor %}
         </ul>
-
-        <!-- <h1>{{producto.productname}}</h1> -->
-
     </div>
 </div>
-
+{% include 'partials/promo.html' %}
 
 {% endblock %}

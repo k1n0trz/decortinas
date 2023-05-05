@@ -8,14 +8,15 @@
 {% block mdescription %}{{ pagemetadesc }}{% endblock %}
 {% block keywords %}{{ pagekeywords }}{% endblock %}
 {% block title %}{{ pagemetatitle }}{% endblock %}
-<!-- <title>Contacto 📱 Cortinas y Persianas | Decortinas e Interiores</title> -->
 {% block content %}
 {% load static %}
 <div class="img__baner">
     {% if pagebanner %}
-    <img src="{{ pagebanner.url }}" alt="{{ pagename }} Decortinas e Interiores" class="img__banner--img">
+    <img src="{{ pagebanner.url }}" alt="{{ pagename }} Decortinas y Persianas" class="img__banner--img">
     {% endif %}
-    <img src="{{ pagebannermov.url }}" alt="{{ pagename }} Decortinas e Interiores" class="img__banner--imgmov">
+    {% if pagebannermov %}
+    <img src="{{ pagebannermov.url }}" alt="{{ pagename }} Decortinas y Persianas" class="img__banner--imgmov">
+    {% endif %}
 </div>
 
 <div class="contacto">
