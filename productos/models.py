@@ -28,8 +28,8 @@ class Product(models.Model): # Crea la tabla product en db
     # Elementos Visuales del producto
     productname = models.CharField(max_length=200, verbose_name="Nombre del Producto")
     productslogan = models.CharField(max_length=200, verbose_name="Slogan del Producto")
-    productoldprice = models.IntegerField(verbose_name="Precio normal")
-    productdiscount = models.IntegerField(verbose_name="Valor de descuento")
+    productoldprice = models.IntegerField(verbose_name="Precio normal", blank=True, default=0, null=True)
+    productdiscount = models.IntegerField(verbose_name="Valor de descuento", blank=True, default=0, null=True)
     producturl = models.CharField(max_length=200, verbose_name="Url producto detalle")
     productdescription = RichTextField()
     productimg = models.ImageField(upload_to='imagenes-decortinas/', verbose_name="Imagen principal del Producto")
