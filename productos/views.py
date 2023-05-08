@@ -1,10 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
-from .models import Asesor, Product, Pagina
+from .models import Asesor, Product, Pagina, Comment
 from django.shortcuts import get_object_or_404, render
-
-# with open('productos/static/json/instant-jetty-384913-83fd70907d3d.json') as f:
-#     data = json.load(f)
 
 def tienda(request):
     # Resto del código para la función de vista
@@ -39,10 +36,6 @@ def tienda(request):
         'pageslogan': pageslogan
     })
 
-# def producto(request, producturl):
-#     product = get_object_or_404(Product, producturl=producturl)
-#     return HttpResponse('product: %s' % product.producturl)
-
 def producto(request, producturl):
     # Buscar el objeto Producto correspondiente al producturl
     producto = get_object_or_404(Product, producturl=producturl)
@@ -66,10 +59,72 @@ def producto(request, producturl):
         'ogdesc':ogdesc})
 
 def servicios(request):
-    return render(request, 'servicios.html')
+    pagina_servicios = get_object_or_404(Pagina, pagename='Servicios')
+    comments = Comment.objects.all()
+    pageslogan = pagina_servicios.pageslogan
+    pagetitle = pagina_servicios.pagetitle
+    pagename = pagina_servicios.pagename
+    pagebanner = pagina_servicios.pagebanner
+    pagebannermov = pagina_servicios.pagebannermov
+    pagemetatitle = pagina_servicios.pagemetatitle
+    pageogtitle = pagina_servicios.pageogtitle
+    pageogdesc = pagina_servicios.pageogdesc
+    pagekeywords = pagina_servicios.pagekeywords
+    pagemetadesc = pagina_servicios.pagemetadesc
+    pageogurl = pagina_servicios.pageogurl
+    pageogimg = pagina_servicios.pageogimg
+    pageogurlsec = pagina_servicios.pageogurlsec
+    return render(request, 'servicios.html', {
+        'pagina': pagina_servicios,
+        'pagemetatitle': pagemetatitle,
+        'pageogtitle': pageogtitle,
+        'pageogdesc': pageogdesc,
+        'pagekeywords': pagekeywords,
+        'pagemetadesc': pagemetadesc,
+        'pageogurl': pageogurl,
+        'pageogimg': pageogimg,
+        'pageogurlsec': pageogurlsec,
+        'pagebanner': pagebanner,
+        'pagename': pagename,
+        'pagebannermov': pagebannermov,
+        'pagetitle': pagetitle,
+        'pageslogan': pageslogan,
+        'comments': comments,
+        })
 
 def pauta(request):
-    return render(request, 'pauta.html')
+    pagina_pauta = get_object_or_404(Pagina, pagename='Pauta')
+    comments = Comment.objects.all()
+    pageslogan = pagina_pauta.pageslogan
+    pagetitle = pagina_pauta.pagetitle
+    pagename = pagina_pauta.pagename
+    pagebanner = pagina_pauta.pagebanner
+    pagebannermov = pagina_pauta.pagebannermov
+    pagemetatitle = pagina_pauta.pagemetatitle
+    pageogtitle = pagina_pauta.pageogtitle
+    pageogdesc = pagina_pauta.pageogdesc
+    pagekeywords = pagina_pauta.pagekeywords
+    pagemetadesc = pagina_pauta.pagemetadesc
+    pageogurl = pagina_pauta.pageogurl
+    pageogimg = pagina_pauta.pageogimg
+    pageogurlsec = pagina_pauta.pageogurlsec
+    return render(request, 'pauta.html', {
+        'pagina': pagina_pauta,
+        'pagemetatitle': pagemetatitle,
+        'pageogtitle': pageogtitle,
+        'pageogdesc': pageogdesc,
+        'pagekeywords': pagekeywords,
+        'pagemetadesc': pagemetadesc,
+        'pageogurl': pageogurl,
+        'pageogimg': pageogimg,
+        'pageogurlsec': pageogurlsec,
+        'pagebanner': pagebanner,
+        'pagename': pagename,
+        'pagebannermov': pagebannermov,
+        'pagetitle': pagetitle,
+        'pageslogan': pageslogan,
+        'comments': comments,
+        })
 
 def cookies(request):
     return render(request, 'cookies.html')
@@ -78,10 +133,14 @@ def privacy(request):
     return render(request, 'privacy.html')
 
 def index(request):
-    return render(request, 'home.html')
+    comments = Comment.objects.all()
+    return render(request, 'home.html', {
+        'comments':comments
+    })
 
 def contacto(request):
     pagina_contacto = get_object_or_404(Pagina, pagename='Contacto')
+    comments = Comment.objects.all()
     pageslogan = pagina_contacto.pageslogan
     pagetitle = pagina_contacto.pagetitle
     pagename = pagina_contacto.pagename
@@ -109,10 +168,13 @@ def contacto(request):
         'pagename': pagename,
         'pagebannermov': pagebannermov,
         'pagetitle': pagetitle,
-        'pageslogan': pageslogan})
+        'pageslogan': pageslogan,
+        'comments': comments,
+        })
 
 def nosotros(request):
     pagina_nosotros = get_object_or_404(Pagina, pagename='Nosotros')
+    comments = Comment.objects.all()
     pageslogan = pagina_nosotros.pageslogan
     pagetitle = pagina_nosotros.pagetitle
     pagename = pagina_nosotros.pagename
@@ -140,4 +202,13 @@ def nosotros(request):
         'pagename': pagename,
         'pagebannermov': pagebannermov,
         'pagetitle': pagetitle,
-        'pageslogan': pageslogan})
+        'pageslogan': pageslogan,
+        'comments': comments,
+        })
+
+def comments(request):
+    comments = Comment.objects.all()
+    context = {
+        'comments': comments,
+    }
+    return render(request, 'partials/comments.html', context)

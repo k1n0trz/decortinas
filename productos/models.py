@@ -65,3 +65,27 @@ class Pagina(models.Model):
 
     def __str__(self):
         return self.pagename
+    
+class Comment(models.Model):
+    ONE_STAR = 1
+    TWO_STARS = 2
+    THREE_STARS = 3
+    FOUR_STARS = 4
+    FIVE_STARS = 5
+
+    RATING_CHOICES = [
+        (ONE_STAR, '1 estrella'),
+        (TWO_STARS, '2 estrellas'),
+        (THREE_STARS, '3 estrellas'),
+        (FOUR_STARS, '4 estrellas'),
+        (FIVE_STARS, '5 estrellas'),
+    ]
+
+    commentname = models.CharField(max_length=200, verbose_name="Nombre del usuario")
+    commentplace = models.CharField(max_length=200, verbose_name="Orígen del usuario", blank=True)
+    commentimg = models.ImageField(upload_to='imagenes-decortinas/', verbose_name="Imagen Banner del usuario", default='/productos/static/img/no-comment.png')
+    commentdescription = RichTextField(verbose_name="Comentario del usuario")
+    commentqualify = models.IntegerField(choices=RATING_CHOICES, default=ONE_STAR, verbose_name="Calificación del usuario")
+
+    def __str__(self):
+        return self.commentname
