@@ -1121,7 +1121,7 @@
 
 /* '' */
 .intro {
-  margin-top: 80px;
+  margin-top: 100px;
   margin-bottom: 80px;
 }
 .intro .intro__title {
@@ -1954,9 +1954,14 @@ nav .container-fluid .navbar-right .navbar-social .navbar-social--link:hover {
 
 .estado__movil {
   display: none;
+  margin-top: 20px;
 }
 .estado__movil .estado__movil--img {
+  display: none;
+}
+.estado__movil iframe {
   width: 100%;
+  height: 720px;
 }
 @media (min-width: 300px) and (max-width: 820px) {
   .estado__movil {
