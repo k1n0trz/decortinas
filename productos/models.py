@@ -89,3 +89,10 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.commentname
+    
+class Video(models.Model):
+    videoname = models.CharField(max_length=200, verbose_name="Nombre del video")
+    videourl = models.CharField(max_length=200, verbose_name="URL del video")
+
+    def __str__(self):
+        return self.videoname

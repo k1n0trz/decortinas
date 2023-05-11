@@ -28,8 +28,12 @@
     </div>
 
     <div class="estado__movil">
+        {% if videourl %}
+        <iframe src="https://www.youtube.com/embed/{{ videourl }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- <iframe src="https://www.youtube.com/embed/xXLujA9XNxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        {% else %}
         <img src="{% static 'img/img-video.jpg' %}" alt="" class="estado__movil--img">
-        <iframe src="https://www.youtube.com/embed/xXLujA9XNxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        {% endif %}
     </div>
 
     <div class="banner__slogan">
@@ -56,7 +60,7 @@
                 necesidades de todos nuestros clientes con la <strong>pasión y el empeño</strong> que dedicamos a todos
                 nuestros
                 productos.<br>
-                <br><a href="/nosotros" class="about__us--link"><strong>Conoce más de nosotros aquí</strong></a>
+                <br><a href="{% url 'nosotros' %}" class="about__us--link"><strong>Conoce más de nosotros aquí</strong></a>
             </p>
         </div>
     </div>
@@ -68,23 +72,23 @@
         </div>
         <div class="high__content">
             <div class="high__content--item">
-                <img src="{% static 'img/high-cortina-b.png' %}" alt="" class="content__item--img">
+                <img src="{% static 'img/high-cortina.png' %}" alt="" class="content__item--img">
                 <div class="high__content--shop">
                     <div class="high__content--title"><strong>Panel Japonés</strong></div>
                     <a href="/tienda/panel-japones/" class="high__content--link icon-cart-plus"> Comprar</a>
                 </div>
             </div>
             <div class="high__content--item">
-                <img src="{% static 'img/high-cortina.png' %}" alt="" class="content__item--img">
+                <img src="{% static 'img/high-cortina-b.png' %}" alt="" class="content__item--img">
                 <div class="high__content--shop">
-                    <div class="high__content--title"><strong>Cortina Tradicional</strong></div>
+                    <div class="high__content--title"><strong>Cortinas en tela</strong></div>
                     <a href="/tienda/cortina-tradicional/" class="high__content--link icon-cart-plus"> Comprar</a>
                 </div>
             </div>
             <div class="high__content--item">
-                <img src="{% static 'img/high-cortina.png' %}" alt="" class="content__item--img">
+                <img src="{% static 'img/high-cortina-c.png' %}" alt="" class="content__item--img">
                 <div class="high__content--shop">
-                    <div class="high__content--title"><strong>Panel Japonés</strong></div>
+                    <div class="high__content--title"><strong>Persiana Vertical</strong></div>
                     <a href="/tienda/panel-japones/" class="high__content--link icon-cart-plus"> Comprar</a>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
-from .models import Asesor, Product, Pagina, Comment
+from .models import Asesor, Product, Pagina, Comment, Video
 from django.shortcuts import get_object_or_404, render
 
 def tienda(request):
@@ -134,8 +134,11 @@ def privacy(request):
 
 def index(request):
     comments = Comment.objects.all()
+    video =get_object_or_404(Video, videoname='Sheer Elegance')
+    videourl = video.videourl
     return render(request, 'home.html', {
-        'comments':comments
+        'comments':comments,
+        'videourl':videourl
     })
 
 def contacto(request):
