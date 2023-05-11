@@ -1,0 +1,118 @@
+footer {
+  background: $Gr;
+  position: inherit;
+  bottom: 0px;
+  width: 100%;
+  height: 260px;
+  color: white;
+  padding: 20px;
+  text-align: left;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+
+    .footer__section {
+      .logolink__footer {
+        width: 100px;
+        opacity: 90%;
+
+        &:hover {
+          transition: all .6s;
+          opacity: 100%;
+        }
+      }
+
+      .footer__section--map {
+        list-style: none;
+        padding-left: 0px;
+        display: flex;
+
+        .section__list--a {
+          margin-right: 20px;
+
+          .footer__section--list {
+            .footer__section--link {
+              color: $Bl;
+              text-decoration: none;
+  
+              &:hover {
+                transition: all .6s;
+                color: $Yl;
+              }
+            }
+          }
+        }
+      }
+
+      .footer__section--contact {
+        list-style: none;
+        padding-left: 0px;
+
+        .footer__section--list {
+          .footer__section--link {
+            color: $Bl;
+            text-decoration: none;
+
+            &:hover {
+              transition: all .6s;
+              color: $Yl;
+            }
+          }
+        }
+      }
+
+      .footer__section--social {
+        list-style: none;
+        padding-left: 0px;
+        display: flex;
+
+        .footer__section--list {
+          font-size: 32px;
+          margin-right: 4px;
+          .footer__section--link {
+            color: $Bl;
+            text-decoration: none;
+
+            &:hover {
+              transition: all .6s;
+              color: $Yl;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .atributo {
+    padding-top: 10px;
+    height: 40px;
+    .atributo__k1n0--enlace {
+      color: $Bl;
+      text-decoration: none;
+
+      &:hover {
+        transition: all .6s;
+        color: $Yl;
+      }
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 820px) {
+  footer {
+    height: 780px;
+    padding-top: 60px;
+    .container {
+      display: block;
+
+      .footer__section {
+        margin-bottom: 40px;
+
+        .footer__section--map {
+          display: block;
+        }
+      }
+    }
+  }
+}

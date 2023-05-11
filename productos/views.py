@@ -133,13 +133,41 @@ def privacy(request):
     return render(request, 'privacy.html')
 
 def index(request):
-    comments = Comment.objects.all()
     video =get_object_or_404(Video, videoname='Sheer Elegance')
     videourl = video.videourl
-    return render(request, 'home.html', {
+    pagina_home = get_object_or_404(Pagina, pagename='Home')
+    pageslogan = pagina_home.pageslogan
+    pagetitle = pagina_home.pagetitle
+    pagename = pagina_home.pagename
+    pagebanner = pagina_home.pagebanner
+    pagebannermov = pagina_home.pagebannermov
+    pagemetatitle = pagina_home.pagemetatitle
+    pageogtitle = pagina_home.pageogtitle
+    pageogdesc = pagina_home.pageogdesc
+    pagekeywords = pagina_home.pagekeywords
+    pagemetadesc = pagina_home.pagemetadesc
+    pageogurl = pagina_home.pageogurl
+    pageogimg = pagina_home.pageogimg
+    pageogurlsec = pagina_home.pageogurlsec
+    comments = Comment.objects.all()
+    context= {
         'comments':comments,
+        'pageogtitle': pageogtitle,
+        'pageslogan': pageslogan,
+        'pagetitle': pagetitle,
+        'pagename': pagename,
+        'pagebanner': pagebanner,
+        'pagebannermov': pagebannermov,
+        'pagemetatitle': pagemetatitle,
+        'pageogdesc': pageogdesc,
+        'pagekeywords': pagekeywords,
+        'pagemetadesc': pagemetadesc,
+        'pageogurl': pageogurl,
+        'pageogimg': pageogimg,
+        'pageogurlsec': pageogurlsec,
         'videourl':videourl
-    })
+    }
+    return render(request, 'home.html', context)
 
 def contacto(request):
     pagina_contacto = get_object_or_404(Pagina, pagename='Contacto')
@@ -215,3 +243,6 @@ def comments(request):
         'comments': comments,
     }
     return render(request, 'partials/comments.html', context)
+
+def custom_404_view(request, exception):
+    return render(request, '404.html', status=404)

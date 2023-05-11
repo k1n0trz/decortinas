@@ -1,7 +1,15 @@
-<title>Home 🏡 Cortinas y Persianas | Decortinas y Persianas</title>
 {% extends 'base/index.html' %}
-{% load static %}
+{% block ogtitle %}{{ pageogtitle }}{% endblock %}
+{% block ogdesc %}{{ pageogdesc }}{% endblock %}
+{% block oguimg %}{{ pageogimg }}{% endblock %}
+{% block ogurls %}{{ pageogurl }}{% endblock %}
+{% block ogurlimg %}{{ pageogurlsec }}{% endblock %}
+
+{% block mdescription %}{{ pagemetadesc }}{% endblock %}
+{% block keywords %}{{ pagekeywords }}{% endblock %}
+{% block title %}{{ pagemetatitle }}{% endblock %}
 {% block content %}
+{% load static %}
 <div class="intro">
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -43,7 +51,7 @@
     <div class="container">
         <div class="intro__title text-center">
             <p class="intro__title--brand"><strong>Decortinas y Persianas</strong></p>
-            <h1 class="intro__title--header">Cortinas y Persianas modernas en Rionegro/Antioquia</h1>
+            <h1 class="intro__title--header">Cortinas y Persianas modernas en Antioquia</h1>
             <h2>Asesoría y domicilio sin costo</strong><br>Igualamos el presupuesto que usted tenga y le descontamos el
                 10% adicional</h2>
         </div>
@@ -82,14 +90,14 @@
                 <img src="{% static 'img/high-cortina-b.png' %}" alt="" class="content__item--img">
                 <div class="high__content--shop">
                     <div class="high__content--title"><strong>Cortinas en tela</strong></div>
-                    <a href="/tienda/cortina-tradicional/" class="high__content--link icon-cart-plus"> Comprar</a>
+                    <a href="/tienda/cortinas-en-tela/" class="high__content--link icon-cart-plus"> Comprar</a>
                 </div>
             </div>
             <div class="high__content--item">
                 <img src="{% static 'img/high-cortina-c.png' %}" alt="" class="content__item--img">
                 <div class="high__content--shop">
-                    <div class="high__content--title"><strong>Persiana Vertical</strong></div>
-                    <a href="/tienda/panel-japones/" class="high__content--link icon-cart-plus"> Comprar</a>
+                    <div class="high__content--title"><strong>Sheer Elegance</strong></div>
+                    <a href="/tienda/sheer-elegance/" class="high__content--link icon-cart-plus"> Comprar</a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,96 @@
+.comments {
+    .comments__header--title {
+        color: $Aq;
+        margin-top: 60px;
+    }
+
+    .comments__body {
+        margin-bottom: 40px;
+
+        .carousel {
+            margin-top: 10px;
+
+            .usercomment {
+                padding: 20px;
+                text-align: center;
+
+                .uc__header {
+                    .uc__header--img {
+                        width: 10%;
+                    }
+                }
+
+                .uc__footer {
+                    .qualify {
+                        padding: 0px;
+                        list-style: none;
+                        display: flex;
+                        justify-content: center;
+
+                        .icon-star,
+                        .icon-star-empty {
+                            color: $Gl;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+
+            .carousel-control-prev {
+                .carousel-control-prev-icon {
+                    color: $Aq;
+                    font-size: 26px;
+
+                    &:hover {
+                        transition: all .6s;
+                        color: $Yl;
+                    }
+                }
+            }
+
+            .carousel-control-next {
+                .carousel-control-next-icon  {
+                    color: $Aq;
+                    font-size: 26px;
+
+                    &:hover {
+                        transition: all .6s;
+                        color: $Yl;
+                    }
+                }
+            }
+
+            @media (min-width: 300px) and (max-width: 820px) {
+                display: block;
+            }
+        }
+
+        .comments__inv {
+            .cinv__body {
+                .cinv__list {
+                    list-style: none;
+                    padding: 0px;
+                    display: flex;
+                    justify-content: center;
+
+                    .cinv__item {
+                        .cinv__link {
+                            background: $Aq;
+                            color: $Bl;
+                            text-decoration: none;
+                            padding: 4px;
+                            font-size: 26px;
+                            margin: 8px;
+                            border-radius: 4px;
+
+                            &:hover {
+                                transition: all .6s;
+                                color: $Yl;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

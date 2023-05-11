@@ -1,0 +1,36 @@
+.error {
+    margin-top: 200px;
+
+    .error__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .error__body--img,
+        .error__body--txt  {
+            width: 30%;
+            margin: 20px;
+        }
+
+        .error__body--txt {
+            .error__body--link {
+                color: $Aq;
+                text-decoration: none;
+
+                &:hover {
+                    transition: all .6s;
+                    color: $Yl;
+                }
+            }
+        }
+
+        @media (min-width: 300px) and (max-width: 820px) {
+            display: block;
+
+            .error__body--img,
+            .error__body--txt  {
+                width: 100%;
+            }
+        }
+    }
+}
