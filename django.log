@@ -1631,3 +1631,121 @@ File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\templates\ba
 C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\templates\base\index.html notified as changed. Signal results: [(<function template_changed at 0x000001AABE1091C0>, True), (<function translation_file_changed at 0x000001AABF5C2CA0>, None)].
 File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\templates\base\index.html previous mtime: 1683840930.043066, current mtime: 1683840947.4420469
 C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\templates\base\index.html notified as changed. Signal results: [(<function template_changed at 0x000001AABE1091C0>, True), (<function translation_file_changed at 0x000001AABF5C2CA0>, None)].
+"GET / HTTP/1.1" 200 27783
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\templates\base\index.html previous mtime: 1683840947.4420469, current mtime: 1683841294.5999725
+C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\templates\base\index.html notified as changed. Signal results: [(<function template_changed at 0x000001AABE1091C0>, True), (<function translation_file_changed at 0x000001AABF5C2CA0>, None)].
+Exception while resolving variable 'disabled' in template 'admin/widgets/clearable_file_input.html'.
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+KeyError: 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [disabled] in {'accept': 'image/*', 'id': 'id_gallerya'}
+Exception while resolving variable 'disabled' in template 'admin/widgets/clearable_file_input.html'.
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+KeyError: 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [disabled] in {'accept': 'image/*', 'id': 'id_galleryb'}
+Exception while resolving variable 'disabled' in template 'admin/widgets/clearable_file_input.html'.
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+KeyError: 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [disabled] in {'accept': 'image/*', 'id': 'id_galleryc'}
+"GET /admin/productos/product/8/change/ HTTP/1.1" 200 24937
+"GET /static/admin/css/dark_mode.4e3d1504ca81.css HTTP/1.1" 200 336
+"GET /static/admin/css/base.01580fff1759.css HTTP/1.1" 200 4701
+"GET /static/admin/css/forms.c192d1ec6902.css HTTP/1.1" 200 2211
+"GET /static/admin/css/nav_sidebar.30423191f399.css HTTP/1.1" 200 763
+"GET /static/admin/css/responsive.02281633b5f1.css HTTP/1.1" 200 3463
+"GET /static/admin/js/vendor/jquery/jquery.min.8fb8fee4fcc3.js HTTP/1.1" 200 30875
+"GET /static/ckeditor/ckeditor-init.3be71376e5bf.js HTTP/1.1" 200 662
+"GET /static/admin/js/jquery.init.b7781a0897fc.js HTTP/1.1" 200 236
+"GET /static/ckeditor/ckeditor/ckeditor.5be63e18d1fd.js HTTP/1.1" 200 223495
+"GET /static/admin/js/core.5d6b384a08b5.js HTTP/1.1" 200 1505
+"GET /static/admin/js/admin/RelatedObjectLookups.de5309ac06dd.js HTTP/1.1" 200 2307
+"GET /static/admin/js/actions.eac7e3441574.js HTTP/1.1" 200 1874
+"GET /static/admin/js/urlify.25cc3eac8123.js HTTP/1.1" 200 2581
+"GET /static/admin/js/prepopulate.bd2361dfd64d.js HTTP/1.1" 200 536
+"GET /static/admin/js/vendor/xregexp/xregexp.min.b0439563a5d3.js HTTP/1.1" 200 37609
+"GET /static/admin/css/fonts.168bab448fee.css HTTP/1.1" 200 189
+"GET /static/admin/css/widgets.00318bc424d3.css HTTP/1.1" 200 2443
+"GET /static/admin/js/prepopulate_init.6cac7f3105b8.js HTTP/1.1" 200 277
+"GET /static/admin/js/nav_sidebar.36a64ecb39ed.js HTTP/1.1" 200 947
+"GET /static/admin/img/icon-changelink.18d2fd706348.svg HTTP/1.1" 200 269
+"GET /static/admin/img/icon-addlink.d519b3bab011.svg HTTP/1.1" 200 206
+"GET /static/admin/img/icon-deletelink.564ef9dc3854.svg HTTP/1.1" 200 221
+"GET /static/admin/img/icon-viewlink.41eb31f7826e.svg HTTP/1.1" 200 346
+"GET /static/admin/js/change_form.9d8ca4f96b75.js HTTP/1.1" 200 322
+File C:\Python311\Lib\site-packages\tzdata\__init__.py first seen with mtime 1674615469.954711
+File C:\Python311\Lib\site-packages\tzdata\zoneinfo\__init__.py first seen with mtime 1674615469.9812696
+- Broken pipe from ('127.0.0.1', 60601)
