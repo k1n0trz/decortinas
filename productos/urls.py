@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 from django.contrib.sitemaps.views import sitemap
 from .views import ProductDetailView
+from django.views.generic.base import TemplateView
 
 handler404 = 'productos.views.custom_404_view'
 
@@ -15,4 +16,5 @@ urlpatterns = [
     path('pauta/', views.pauta, name="pauta"),
     path('cookies/', views.cookies, name="cookies"),
     path('privacy/', views.privacy, name="privacy"),
+    path("robots.txt", views.robots, name="robots"),
 ]
