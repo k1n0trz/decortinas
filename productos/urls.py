@@ -1,5 +1,7 @@
 from django.urls import path
 from . import views
+from django.contrib.sitemaps.views import sitemap
+from .views import ProductDetailView
 
 handler404 = 'productos.views.custom_404_view'
 
@@ -8,7 +10,7 @@ urlpatterns = [
     path('contacto/', views.contacto, name="contacto"),
     path('nosotros/', views.nosotros, name="nosotros"),
     path('tienda/', views.tienda, name="tienda"),
-    path('tienda/<str:producturl>/', views.producto, name="producto"),
+    path('tienda/<slug:producturl>/', ProductDetailView.as_view(), name='product_detail'),
     path('servicios/', views.servicios, name="servicios"),
     path('pauta/', views.pauta, name="pauta"),
     path('cookies/', views.cookies, name="cookies"),

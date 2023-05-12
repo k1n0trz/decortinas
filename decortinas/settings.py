@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'productos', # Trae las tablas para leerlas
-    'ckeditor'
+    'ckeditor',
 ]
 
 MIDDLEWARE = [

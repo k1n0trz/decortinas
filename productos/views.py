@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
 from .models import Asesor, Product, Pagina, Comment, Video
 from django.shortcuts import get_object_or_404, render
+from django.views.generic import DetailView
+# from django.views.generic.base import RedirectView
 
 def tienda(request):
     # Resto del código para la función de vista
@@ -36,27 +37,25 @@ def tienda(request):
         'pageslogan': pageslogan
     })
 
-def producto(request, producturl):
-    # Buscar el objeto Producto correspondiente al producturl
-    producto = get_object_or_404(Product, producturl=producturl)
-    titulo = producto.productogtitle
-    ogtitle = producto.productogtitle
-    ogdesc = producto.productogdesc
-    keywords = producto.productkeywords
-    mdescription = producto.productmetadesc
-    ogurl = producto.productogurl
-    ogimg = producto.productogimg
-    ogurlimg = producto.productogurlsec
-    # Renderizar la plantilla de detalle del producto y pasar el objeto producto como contexto
-    return render(request, 'producto-detalle.html',{
-        'producto': producto,
-        'titulo': titulo,
-        'keywords':keywords,
-        'mdescription':mdescription,
-        'ogurl':ogurl, 'ogimg':ogimg,
-        'ogtitle':ogtitle,
-        'ogurlimg':ogurlimg,
-        'ogdesc':ogdesc})
+class ProductDetailView(DetailView):
+    model = Product
+    template_name = 'producto-detalle.html'
+    context_object_name = 'producto'
+
+    def get_object(self):
+        return Product.objects.get(producturl=self.kwargs['producturl'])
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['titulo'] = self.object.productogtitle
+        context['keywords'] = self.object.productkeywords
+        context['mdescription'] = self.object.productmetadesc
+        context['ogurl'] = self.object.productogurl
+        context['ogimg'] = self.object.productogimg
+        context['ogtitle'] = self.object.productogtitle
+        context['ogurlimg'] = self.object.productogurlsec
+        context['ogdesc'] = self.object.productogdesc
+        return context
 
 def servicios(request):
     pagina_servicios = get_object_or_404(Pagina, pagename='Servicios')
@@ -165,7 +164,7 @@ def index(request):
         'pageogurl': pageogurl,
         'pageogimg': pageogimg,
         'pageogurlsec': pageogurlsec,
-        'videourl':videourl
+        'videourl':videourl,
     }
     return render(request, 'home.html', context)
 

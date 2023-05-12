@@ -1,6 +1,7 @@
 from django.db import models
 from ckeditor.fields import RichTextField
 from storages.backends.s3boto3 import S3Boto3Storage
+from django.urls import reverse
 
 # Create your models here.
 class Asesor(models.Model):
@@ -13,7 +14,9 @@ class S3ProductImage(S3Boto3Storage):
     location = 'imagenes-decortinas'
     file_overwrite = False
 
-class Product(models.Model): # Crea la tabla product en db
+from django.urls import reverse
+
+class Product(models.Model):
     # Elementos del header del producto
     productmetadesc = models.CharField(max_length=200, verbose_name="Meta descripción del Producto")
     productkeywords = RichTextField(verbose_name="Palabras clave del Producto")
@@ -39,14 +42,19 @@ class Product(models.Model): # Crea la tabla product en db
     # productimg = models.ImageField(upload_to='static/img/uploads/', verbose_name="Imagen principal del Producto")
     asesor = models.ForeignKey(Asesor, on_delete=models.SET_NULL, null=True)
     productprice = models.IntegerField(verbose_name="Precio de venta", blank=True, null=True, editable=False)
+    productupdated = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.productname + ' - creado por - ' + self.asesor.name
 
     def save(self, *args, **kwargs):
-        if self.productoldprice and self.productdiscount:
+        self.productupdated = timezone.now()
+        if self.productoldprice is not None and self.productdiscount is not None:
             self.productprice = self.productoldprice - (self.productoldprice * self.productdiscount / 100)
         super().save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return reverse('product_detail', kwargs={'pk': self.pk})
 
 class Pagina(models.Model):
     pagename = models.CharField(max_length=200, verbose_name="Nombre de la página")

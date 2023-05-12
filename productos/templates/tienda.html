@@ -60,7 +60,7 @@
                                 target="_blank" rel="nofollow" class="producto__else--wp">WhatsApp</a></strong></p>
                         </div>
                         {% endif %}
-                        <a href="/tienda/{{producto.producturl}}" class="button__product">Ver más</a>
+                        <a class="button__product" href="{% url 'product_detail' producturl=producto.producturl %}">Ver más</a>
                     </div>
                 </div>
             </li>
