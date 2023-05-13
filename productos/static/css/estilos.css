@@ -1978,6 +1978,7 @@ nav .container-fluid .navbar-right .navbar-social .navbar-social--link {
   text-decoration: none;
   font-size: 32px;
   color: #009292;
+  margin-right: 20px;
 }
 nav .container-fluid .navbar-right .navbar-social .navbar-social--link:hover {
   transition: all 0.6s;
