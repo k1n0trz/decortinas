@@ -3358,3 +3358,387 @@ File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\templates\pa
 File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\templates\partials\scripts.html first seen with mtime 1683816315.7456703
 File C:\Python311\Lib\site-packages\ckeditor\templates\ckeditor first seen with mtime 1682266774.3257833
 File C:\Python311\Lib\site-packages\ckeditor\templates\ckeditor\widget.html first seen with mtime 1682266774.3257833
+File C:\Python311\Lib\site-packages\requests\compat.py first seen with mtime 1674533040.6842613
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0006_remove_product_additional_images_product_gallerya_and_more.py first seen with mtime 1683216049.815632
+File C:\Python311\Lib\site-packages\django\contrib\messages\middleware.py first seen with mtime 1674615473.0324316
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\pyparsing\common.py first seen with mtime 1667917729.404314
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\backend.py first seen with mtime 1674533040.8560956
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\pyparsing\unicode.py first seen with mtime 1667917729.4083035
+File C:\Python311\Lib\site-packages\idna\core.py first seen with mtime 1674532686.8168325
+File C:\Python311\Lib\site-packages\google\oauth2\service_account.py first seen with mtime 1682520375.2527409
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\ed25519.py first seen with mtime 1674533040.8560956
+File C:\Python311\Lib\site-packages\google\protobuf\text_format.py first seen with mtime 1674532487.2024617
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\packaging\_musllinux.py first seen with mtime 1667917729.3983302
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0008_alter_product_productbanner.py first seen with mtime 1683232812.6892402
+File C:\Python311\Lib\site-packages\charset_normalizer\models.py first seen with mtime 1674532687.0425446
+File C:\Python311\Lib\site-packages\cryptography\x509\oid.py first seen with mtime 1674533040.9342017
+File C:\Python311\Lib\site-packages\google\auth\_service_account_info.py first seen with mtime 1682520375.2227998
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\ec.py first seen with mtime 1674533040.8560956
+File C:\Python311\Lib\site-packages\google\cloud\storage\client.py first seen with mtime 1682520376.312943
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\__init__.py first seen with mtime 1674533040.8560956
+File C:\Python311\Lib\encodings\idna.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\site-packages\win32com\__init__.py first seen with mtime 1674660051.6088774
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\packaging\_manylinux.py first seen with mtime 1667917729.3983302
+File C:\Python311\Lib\site-packages\cffi\error.py first seen with mtime 1674533040.182334
+File C:\Python311\Lib\site-packages\google\resumable_media\requests\download.py first seen with mtime 1682520375.0229683
+File C:\Python311\Lib\site-packages\requests\structures.py first seen with mtime 1674533040.699883
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\pyparsing\helpers.py first seen with mtime 1667917729.4073062
+File C:\Python311\Lib\site-packages\django\contrib\contenttypes\migrations\0002_remove_content_type_name.py first seen with mtime 1674615472.4011543
+File C:\Python311\Lib\site-packages\google\api_core\datetime_helpers.py first seen with mtime 1682520375.8009589
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\decortinas\wsgi.py first seen with mtime 1683225076.0077703
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0007_alter_validators_add_error_messages.py first seen with mtime 1674615472.2008247
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\aead.py first seen with mtime 1674533040.8560956
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0003_alter_product_productimg.py first seen with mtime 1683216049.815632
+File C:\Python311\Lib\site-packages\google\cloud\storage\fileio.py first seen with mtime 1682520376.3138943
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0002_alter_permission_name_max_length.py first seen with mtime 1674615472.2008247
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\hmac.py first seen with mtime 1674533040.8560956
+File C:\Python311\Lib\site-packages\google\auth\exceptions.py first seen with mtime 1682520375.2227998
+File C:\Python311\Lib\site-packages\cryptography\x509\__init__.py first seen with mtime 1674533040.9342017
+File C:\Python311\Lib\site-packages\whitenoise\compress.py first seen with mtime 1674935812.2019668
+File C:\Python311\Lib\site-packages\idna\intranges.py first seen with mtime 1674532686.818828
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0005_alter_user_last_login_null.py first seen with mtime 1674615472.2008247
+File C:\Python311\Lib\site-packages\google\auth\crypt\es256.py first seen with mtime 1682520375.2425692
+File C:\Python311\Lib\site-packages\google\cloud\storage\blob.py first seen with mtime 1682520376.310336
+File C:\Python311\Lib\site-packages\google\protobuf\internal\extension_dict.py first seen with mtime 1674532487.2180831
+File C:\Python311\Lib\site-packages\google\protobuf\descriptor_pb2.py first seen with mtime 1674532487.2024617
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\x448.py first seen with mtime 1674533040.8717165
+File C:\Python311\Lib\site-packages\requests\status_codes.py first seen with mtime 1674533040.699883
+File C:\Python311\Lib\site-packages\cryptography\x509\base.py first seen with mtime 1674533040.9342017
+File C:\Python311\Lib\site-packages\google\resumable_media\common.py first seen with mtime 1682520375.0229683
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\pyparsing\util.py first seen with mtime 1667917729.4093006
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0006_require_contenttypes_0002.py first seen with mtime 1674615472.2008247
+File C:\Python311\Lib\site-packages\django\contrib\admin\migrations\0002_logentry_remove_auto_add.py first seen with mtime 1674615471.6622846
+File C:\Python311\Lib\site-packages\cffi\lock.py first seen with mtime 1674533040.182334
+File C:\Python311\Lib\site-packages\django\db\migrations\executor.py first seen with mtime 1674615474.0145652
+File C:\Python311\Lib\site-packages\google\cloud\exceptions\__init__.py first seen with mtime 1682520376.2130165
+File C:\Python311\Lib\site-packages\requests\api.py first seen with mtime 1674533040.6842613
+File C:\Python311\Lib\site-packages\django\contrib\admin\migrations\__init__.py first seen with mtime 1674615471.6622846
+File C:\Python311\Lib\site-packages\cryptography\x509\extensions.py first seen with mtime 1674533040.9342017
+File C:\Python311\Lib\site-packages\google\api_core\iam.py first seen with mtime 1682520375.8029647
+File C:\Python311\Lib\site-packages\google\protobuf\symbol_database.py first seen with mtime 1674532487.2024617
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0016_comment.py first seen with mtime 1683556605.2417579
+File C:\Python311\Lib\site-packages\cryptography\hazmat\primitives\constant_time.py first seen with mtime 1674533040.9029596
+File C:\Python311\Lib\importlib\resources\_itertools.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\encodings\raw_unicode_escape.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\site-packages\google\auth\transport\_mtls_helper.py first seen with mtime 1682520375.2425692
+File C:\Python311\Lib\site-packages\google\auth\crypt\rsa.py first seen with mtime 1682520375.2425692
+File C:\Python311\Lib\site-packages\requests\_internal_utils.py first seen with mtime 1674533040.6842613
+File C:\Python311\Lib\site-packages\google\auth\transport\requests.py first seen with mtime 1682520375.2425692
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0007_product_productbanner.py first seen with mtime 1683231538.2823246
+File C:\Python311\Lib\site-packages\google\cloud\_http\__init__.py first seen with mtime 1682520376.2070198
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py first seen with mtime 1674615472.2138338
+File C:\Python311\Lib\site-packages\cffi\__init__.py first seen with mtime 1674533040.166712
+File C:\Python311\Lib\site-packages\google\protobuf\duration_pb2.py first seen with mtime 1674532487.2024617
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\rsa.py first seen with mtime 1674533040.8560956
+File C:\Python311\Lib\site-packages\google\api_core\client_options.py first seen with mtime 1682520375.799989
+File C:\Python311\Lib\site-packages\google\auth\crypt\_cryptography_rsa.py first seen with mtime 1682520375.2355626
+File C:\Python311\Lib\site-packages\google\protobuf\message.py first seen with mtime 1674532487.2024617
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0018_product_productupdated.py first seen with mtime 1683846692.6853294
+File C:\Python311\Lib\site-packages\PIL\ImageMode.py first seen with mtime 1682129550.4664567
+File C:\Python311\Lib\site-packages\cryptography\hazmat\primitives\serialization\pkcs12.py first seen with mtime 1674533040.9342017
+File C:\Python311\Lib\site-packages\charset_normalizer\api.py first seen with mtime 1674532687.0386198
+File C:\Python311\Lib\site-packages\google\protobuf\internal\__init__.py first seen with mtime 1674532487.2024617
+File C:\Python311\Lib\site-packages\google\api_core\exceptions.py first seen with mtime 1682520375.8020225
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0010_pagina_product_galleryc_alter_product_galleryb_and_more.py first seen with mtime 1683300421.309379
+File C:\Python311\Lib\site-packages\cffi\api.py first seen with mtime 1674533040.166712
+File C:\Python311\Lib\site-packages\PIL\_imaging.cp311-win_amd64.pyd first seen with mtime 1682129550.509237
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\ed448.py first seen with mtime 1674533040.8560956
+File C:\Python311\Lib\site-packages\google\rpc\__init__.py first seen with mtime 1682520374.2028067
+File C:\Python311\Lib\site-packages\google\cloud\client\__init__.py first seen with mtime 1682520376.2103977
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\__init__.py first seen with mtime 1683216049.815632
+File C:\Python311\Lib\site-packages\google\protobuf\internal\wire_format.py first seen with mtime 1674532487.2180831
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\packaging\tags.py first seen with mtime 1667917729.4013224
+File C:\Python311\Lib\site-packages\google\api_core\page_iterator.py first seen with mtime 1682520375.8029647
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0005_additionalimage_product_additional_images.py first seen with mtime 1683216049.815632
+File C:\Python311\Lib\site-packages\google\auth\__init__.py first seen with mtime 1682520375.2131855
+File C:\Python311\Lib\site-packages\django\contrib\contenttypes\migrations\0001_initial.py first seen with mtime 1674615472.4011543
+File C:\Python311\Lib\site-packages\google\protobuf\internal\python_message.py first seen with mtime 1674532487.2180831
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0012_alter_product_productdiscount_and_more.py first seen with mtime 1683302753.009023
+File C:\Python311\Lib\site-packages\charset_normalizer\constant.py first seen with mtime 1674532687.0395799
+File C:\Python311\Lib\site-packages\charset_normalizer\legacy.py first seen with mtime 1674532687.0405772
+File C:\Python311\Lib\site-packages\google\auth\transport\_http_client.py first seen with mtime 1682520375.2425692
+File C:\Python311\Lib\site-packages\django\contrib\sessions\migrations\__init__.py first seen with mtime 1674615473.702736
+File C:\Python311\Lib\encodings\unicode_escape.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\site-packages\google\protobuf\internal\builder.py first seen with mtime 1674532487.2024617
+File C:\Python311\Lib\site-packages\cryptography\hazmat\bindings\openssl\binding.py first seen with mtime 1674533040.9029596
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\dsa.py first seen with mtime 1674533040.8560956
+File C:\Python311\Lib\site-packages\pkg_resources\__init__.py first seen with mtime 1667917729.3843675
+File C:\Python311\Lib\site-packages\google\protobuf\timestamp_pb2.py first seen with mtime 1674532487.2024617
+File C:\Python311\Lib\site-packages\google\resumable_media\_upload.py first seen with mtime 1682520375.0229683
+File C:\Python311\Lib\site-packages\cryptography\hazmat\bindings\openssl\_conditional.py first seen with mtime 1674533040.9029596
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\packaging\version.py first seen with mtime 1667917729.4023197
+File C:\Python311\Lib\site-packages\google\cloud\storage\_signing.py first seen with mtime 1682520376.3025815
+File C:\Python311\Lib\site-packages\google\protobuf\internal\message_listener.py first seen with mtime 1674532487.2180831
+File C:\Python311\Lib\site-packages\cffi\model.py first seen with mtime 1674533040.182334
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\pyparsing\testing.py first seen with mtime 1667917729.4083035
+File C:\Python311\Lib\site-packages\google\resumable_media\requests\upload.py first seen with mtime 1682520375.0229683
+File C:\Python311\Lib\site-packages\whitenoise\string_utils.py first seen with mtime 1674935812.2069607
+File C:\Python311\Lib\site-packages\google\cloud\version.py first seen with mtime 1682520376.2050183
+File C:\Python311\Lib\site-packages\google\auth\version.py first seen with mtime 1682520375.2355626
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0017_video.py first seen with mtime 1683815386.5262475
+File C:\Python311\Lib\site-packages\google\resumable_media\__init__.py first seen with mtime 1682520375.0229683
+File C:\Python311\Lib\site-packages\cryptography\x509\general_name.py first seen with mtime 1674533040.9342017
+File C:\Python311\Lib\site-packages\django\contrib\sessions\exceptions.py first seen with mtime 1674615473.514369
+File C:\Python311\Lib\site-packages\whitenoise\responders.py first seen with mtime 1674935812.203946
+File C:\Python311\Lib\site-packages\google\cloud\_helpers\__init__.py first seen with mtime 1682520376.2060218
+File C:\Python311\Lib\site-packages\win32comext\shell\__init__.py first seen with mtime 1674660051.7338479
+File C:\Python311\Lib\site-packages\django\contrib\sessions\backends\__init__.py first seen with mtime 1674615473.514369
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0014_alter_product_productdiscount_and_more.py first seen with mtime 1683303694.591841
+File C:\Python311\Lib\site-packages\requests\sessions.py first seen with mtime 1674533040.699883
+File C:\Python311\Lib\site-packages\google\protobuf\descriptor_pool.py first seen with mtime 1674532487.2024617
+File C:\Python311\Lib\site-packages\cryptography\x509\certificate_transparency.py first seen with mtime 1674533040.9342017
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\pyparsing\core.py first seen with mtime 1667917729.4053116
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\packaging\utils.py first seen with mtime 1667917729.4023197
+File C:\Python311\Lib\site-packages\requests\hooks.py first seen with mtime 1674533040.6842613
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0008_alter_user_username_max_length.py first seen with mtime 1674615472.2138338
+File C:\Python311\Lib\site-packages\requests\__init__.py first seen with mtime 1674533040.6842613
+File C:\Python311\Lib\zipfile.py first seen with mtime 1670375372.0
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0004_alter_product_productimg.py first seen with mtime 1683216049.815632
+File C:\Python311\Lib\site-packages\google\protobuf\__init__.py first seen with mtime 1674532487.1868737
+File C:\Python311\Lib\site-packages\google\rpc\error_details_pb2.py first seen with mtime 1682520374.2028067
+File C:\Python311\Lib\site-packages\PIL\_deprecate.py first seen with mtime 1682129550.497406
+File C:\Python311\Lib\site-packages\idna\package_data.py first seen with mtime 1674532686.8198256
+File C:\Python311\Lib\site-packages\cryptography\x509\name.py first seen with mtime 1674533040.9342017
+File C:\Python311\Lib\site-packages\django\db\migrations\recorder.py first seen with mtime 1674615474.0145652
+File C:\Python311\Lib\site-packages\django\contrib\sessions\backends\base.py first seen with mtime 1674615473.514369
+File C:\Python311\Lib\site-packages\win32\_win32sysloader.pyd first seen with mtime 1674660051.499528
+File C:\Python311\Lib\xml\parsers\__init__.py first seen with mtime 1670375372.0
+File C:\Python311\Lib\site-packages\google\protobuf\descriptor_database.py first seen with mtime 1674532487.1868737
+File C:\Python311\Lib\site-packages\google\oauth2\_client.py first seen with mtime 1682520375.2512357
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\packaging\markers.py first seen with mtime 1667917729.3993275
+File C:\Python311\Lib\site-packages\google\auth\jwt.py first seen with mtime 1682520375.2330124
+File C:\Python311\Lib\site-packages\idna\idnadata.py first seen with mtime 1674532686.8178315
+File C:\Python311\Lib\xml\parsers\expat.py first seen with mtime 1670375372.0
+File C:\Python311\Lib\site-packages\google\cloud\storage\batch.py first seen with mtime 1682520376.3025815
+File C:\Python311\Lib\site-packages\google\auth\_helpers.py first seen with mtime 1682520375.2227998
+File C:\Python311\Lib\site-packages\google\resumable_media\_download.py first seen with mtime 1682520375.0229683
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\utils.py first seen with mtime 1674533040.8560956
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0001_initial.py first seen with mtime 1683216049.815632
+File C:\Python311\Lib\site-packages\django\db\migrations\loader.py first seen with mtime 1674615474.0145652
+File C:\Python311\Lib\site-packages\google\api_core\client_info.py first seen with mtime 1682520375.799989
+File C:\Python311\Lib\site-packages\google\protobuf\internal\decoder.py first seen with mtime 1674532487.2180831
+File C:\Python311\Lib\site-packages\cryptography\hazmat\bindings\openssl\__init__.py first seen with mtime 1674533040.9029596
+File C:\Python311\Lib\site-packages\google\protobuf\internal\encoder.py first seen with mtime 1674532487.2180831
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0004_alter_user_username_opts.py first seen with mtime 1674615472.2008247
+File C:\Python311\Lib\site-packages\google\protobuf\text_encoding.py first seen with mtime 1674532487.2024617
+File C:\Python311\Lib\site-packages\google\protobuf\internal\well_known_types.py first seen with mtime 1674532487.2180831
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\x25519.py first seen with mtime 1674533040.8560956
+File C:\Python311\Lib\site-packages\requests\packages.py first seen with mtime 1674533040.699883
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\more_itertools\recipes.py first seen with mtime 1667917729.3963366
+File C:\Python311\Lib\site-packages\google\api_core\__init__.py first seen with mtime 1682520375.7979684
+File C:\Python311\Lib\site-packages\django\contrib\sessions\migrations\0001_initial.py first seen with mtime 1674615473.702736
+File C:\Python311\Lib\site-packages\PIL\_binary.py first seen with mtime 1682129550.497406
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\packaging\_structures.py first seen with mtime 1667917729.3993275
+File C:\Python311\Lib\site-packages\google\resumable_media\requests\__init__.py first seen with mtime 1682520375.0229683
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\ciphers.py first seen with mtime 1674533040.8560956
+File C:\Python311\Lib\email\mime\application.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\site-packages\google\protobuf\internal\containers.py first seen with mtime 1674532487.2024617
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\jaraco\text\__init__.py first seen with mtime 1667917729.3933434
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0011_alter_product_productogtitle.py first seen with mtime 1683301375.4216442
+File C:\Python311\Lib\site-packages\google\resumable_media\_helpers.py first seen with mtime 1682520375.0229683
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\cmac.py first seen with mtime 1674533040.8560956
+File C:\Python311\Lib\http\cookiejar.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\site-packages\django\middleware\security.py first seen with mtime 1674615474.1399715
+File C:\Python311\Lib\site-packages\charset_normalizer\__init__.py first seen with mtime 1674532687.0376303
+File C:\Python311\Lib\importlib\resources\readers.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\site-packages\cryptography\hazmat\primitives\kdf\__init__.py first seen with mtime 1674533040.9185817
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0010_alter_group_name_max_length.py first seen with mtime 1674615472.2138338
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\dh.py first seen with mtime 1674533040.8560956
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\pyparsing\actions.py first seen with mtime 1667917729.403317
+File C:\Python311\Lib\site-packages\cachetools\keys.py first seen with mtime 1682520374.9728746
+File C:\Python311\Lib\site-packages\storages\backends\gcloud.py first seen with mtime 1682518981.0885594
+File C:\Python311\Lib\site-packages\requests\utils.py first seen with mtime 1674533040.699883
+File C:\Python311\Lib\site-packages\whitenoise\storage.py first seen with mtime 1674935812.2059474
+File C:\Python311\Lib\site-packages\django\db\models\sql\compiler.py first seen with mtime 1674615474.045813
+File C:\Python311\Lib\site-packages\google\cloud\storage\notification.py first seen with mtime 1682520376.3158925
+File C:\Python311\Lib\site-packages\google\protobuf\internal\enum_type_wrapper.py first seen with mtime 1674532487.2180831
+File C:\Python311\Lib\plistlib.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\pyparsing\results.py first seen with mtime 1667917729.4073062
+File C:\Python311\Lib\site-packages\django\middleware\clickjacking.py first seen with mtime 1674615474.1399715
+File C:\Python311\Lib\site-packages\google\auth\crypt\__init__.py first seen with mtime 1682520375.2355626
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\packaging\specifiers.py first seen with mtime 1667917729.4003248
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\__init__.py first seen with mtime 1674615472.2138338
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\hashes.py first seen with mtime 1674533040.8560956
+File C:\Python311\Lib\site-packages\cryptography\hazmat\backends\openssl\poly1305.py first seen with mtime 1674533040.8560956
+File C:\Python311\Lib\site-packages\requests\auth.py first seen with mtime 1674533040.6842613
+File C:\Python311\Lib\site-packages\charset_normalizer\version.py first seen with mtime 1674532687.0445375
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\pyparsing\exceptions.py first seen with mtime 1667917729.406309
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\more_itertools\more.py first seen with mtime 1667917729.3953393
+File C:\Python311\Lib\site-packages\win32\win32api.pyd first seen with mtime 1674660051.5151496
+File C:\Python311\Lib\site-packages\google\cloud\storage\retry.py first seen with mtime 1682520376.3168924
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\jaraco\context.py first seen with mtime 1667917729.3923461
+File C:\Python311\Lib\site-packages\google\auth\crypt\base.py first seen with mtime 1682520375.2355626
+File C:\Python311\Lib\site-packages\google\cloud\storage\bucket.py first seen with mtime 1682520376.3113806
+File C:\Python311\Lib\site-packages\google\cloud\storage\_http.py first seen with mtime 1682520376.3025815
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0009_product_productbannermov.py first seen with mtime 1683234406.3815675
+File C:\Python311\Lib\site-packages\django\middleware\common.py first seen with mtime 1674615474.1399715
+File C:\Python311\Lib\site-packages\django\db\migrations\graph.py first seen with mtime 1674615474.0145652
+File C:\Python311\Lib\site-packages\django\contrib\admin\migrations\0001_initial.py first seen with mtime 1674615471.6622846
+File C:\Python311\Lib\site-packages\charset_normalizer\assets\__init__.py first seen with mtime 1674532687.0454986
+File C:\Python311\Lib\site-packages\google\auth\credentials.py first seen with mtime 1682520375.2227998
+File C:\Python311\Lib\site-packages\google\auth\transport\__init__.py first seen with mtime 1682520375.2425692
+File C:\Python311\Lib\site-packages\charset_normalizer\utils.py first seen with mtime 1674532687.0435412
+File C:\Python311\Lib\site-packages\requests\__version__.py first seen with mtime 1674533040.6842613
+File C:\Python311\Lib\site-packages\google\auth\_default.py first seen with mtime 1682520375.2131855
+File C:\Python311\Lib\site-packages\cryptography\hazmat\primitives\kdf\scrypt.py first seen with mtime 1674533040.9185817
+File C:\Python311\Lib\site-packages\google\cloud\storage\constants.py first seen with mtime 1682520376.3138943
+File C:\Python311\Lib\site-packages\whitenoise\middleware.py first seen with mtime 1674935812.203946
+File C:\Python311\Lib\site-packages\pkg_resources\extern\__init__.py first seen with mtime 1667917729.410298
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0012_alter_user_first_name_max_length.py first seen with mtime 1674615472.2138338
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0002_alter_product_productimg.py first seen with mtime 1683216049.815632
+File C:\Python311\Lib\site-packages\django\contrib\auth\backends.py first seen with mtime 1674615471.9938679
+File C:\Python311\Lib\stringprep.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\site-packages\google\protobuf\message_factory.py first seen with mtime 1674532487.2024617
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0015_alter_pagina_pageogtitle.py first seen with mtime 1683306127.7010448
+File C:\Python311\Lib\site-packages\google\api_core\retry.py first seen with mtime 1682520375.8134544
+File C:\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py first seen with mtime 1674615473.514369
+File C:\Python311\Lib\site-packages\idna\__init__.py first seen with mtime 1674532686.8148694
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\packaging\__about__.py first seen with mtime 1667917729.3963366
+File C:\Python311\Lib\site-packages\_cffi_backend.cp311-win_amd64.pyd first seen with mtime 1674533040.166712
+File C:\Python311\Lib\site-packages\google\cloud\storage\__init__.py first seen with mtime 1682520376.3025815
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\packaging\requirements.py first seen with mtime 1667917729.4003248
+File C:\Python311\Lib\site-packages\google\auth\environment_vars.py first seen with mtime 1682520375.2227998
+File C:\Python311\Lib\site-packages\charset_normalizer\cd.py first seen with mtime 1674532687.0395799
+File C:\Python311\Lib\site-packages\charset_normalizer\md.py first seen with mtime 1674532687.0415435
+File C:\Python311\Lib\site-packages\django\contrib\contenttypes\migrations\__init__.py first seen with mtime 1674615472.4011543
+File C:\Python311\Lib\site-packages\google\protobuf\internal\api_implementation.py first seen with mtime 1674532487.2024617
+File C:\Python311\Lib\importlib\readers.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\site-packages\cryptography\hazmat\bindings\_openssl.pyd first seen with mtime 1674533040.8873382
+File C:\Python311\Lib\site-packages\PIL\_util.py first seen with mtime 1682129550.5273342
+File C:\Python311\Lib\site-packages\google\oauth2\__init__.py first seen with mtime 1682520375.2512357
+File C:\Python311\Lib\site-packages\requests\certs.py first seen with mtime 1674533040.6842613
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0001_initial.py first seen with mtime 1674615472.2008247
+File C:\Python311\Lib\site-packages\google\protobuf\descriptor.py first seen with mtime 1674532487.1868737
+File C:\Python311\Lib\site-packages\django\contrib\sessions\middleware.py first seen with mtime 1674615473.514369
+File C:\Python311\Lib\site-packages\google\protobuf\internal\type_checkers.py first seen with mtime 1674532487.2180831
+File C:\Python311\Lib\site-packages\cachetools\__init__.py first seen with mtime 1682520374.9662797
+File C:\Python311\Lib\site-packages\google\cloud\storage\version.py first seen with mtime 1682520376.318893
+File C:\Python311\Lib\site-packages\PIL\TiffTags.py first seen with mtime 1682129550.4922714
+File C:\Python311\Lib\site-packages\django\views\csrf.py first seen with mtime 1674615474.2184744
+File C:\Python311\Lib\site-packages\whitenoise\media_types.py first seen with mtime 1674935812.2029462
+File C:\Python311\Lib\site-packages\google\cloud\storage\acl.py first seen with mtime 1682520376.3025815
+File C:\Python311\Lib\site-packages\requests\exceptions.py first seen with mtime 1674533040.6842613
+File C:\Python311\Lib\site-packages\whitenoise\__init__.py first seen with mtime 1674935812.199343
+File C:\Python311\Lib\site-packages\requests\models.py first seen with mtime 1674533040.6842613
+File C:\Python311\Lib\site-packages\requests\cookies.py first seen with mtime 1674533040.6842613
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\__init__.py first seen with mtime 1667917729.3853648
+File C:\Python311\Lib\site-packages\pkg_resources\_vendor\jaraco\functools.py first seen with mtime 1667917729.3933434
+File C:\Python311\Lib\site-packages\google\auth\_exponential_backoff.py first seen with mtime 1682520375.219794
+File C:\Users\todo_\OneDrive\Documentos\GitHub\decortinas\productos\migrations\0013_alter_product_productdiscount_and_more.py first seen with mtime 1683303559.370739
+File C:\Python311\Lib\site-packages\whitenoise\base.py first seen with mtime 1674935812.2009454
+File C:\Python311\Lib\site-packages\google\cloud\storage\hmac_key.py first seen with mtime 1682520376.3148928
+File C:\Python311\Lib\site-packages\django\contrib\admin\migrations\0003_logentry_add_action_flag_choices.py first seen with mtime 1674615471.6622846
+File C:\Python311\Lib\site-packages\google\protobuf\reflection.py first seen with mtime 1674532487.2024617
+File C:\Python311\Lib\site-packages\requests\adapters.py first seen with mtime 1674533040.6842613
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0009_alter_user_last_name_max_length.py first seen with mtime 1674615472.2138338
+File C:\Python311\Lib\site-packages\google\api_core\version.py first seen with mtime 1682520375.815465
+File C:\Python311\Lib\site-packages\google\cloud\storage\_helpers.py first seen with mtime 1682520376.3025815
+File C:\Python311\Lib\site-packages\django\core\cache\backends\locmem.py first seen with mtime 1674615473.9065704
+File C:\Python311\Lib\site-packages\django\contrib\auth\middleware.py first seen with mtime 1674615472.0004022
+File C:\Python311\Lib\site-packages\google\resumable_media\requests\_request_helpers.py first seen with mtime 1682520375.0229683
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0003_alter_user_email_max_length.py first seen with mtime 1674615472.2008247
+File C:\Python311\Lib\site-packages\django\contrib\messages\storage\fallback.py first seen with mtime 1674615473.0324316
+File C:\Python311\Lib\site-packages\django\contrib\messages\storage\cookie.py first seen with mtime 1674615473.0324316
+File C:\Python311\Lib\site-packages\django\contrib\sessions\serializers.py first seen with mtime 1674615473.514369
+File C:\Python311\Lib\site-packages\django\contrib\messages\storage\session.py first seen with mtime 1674615473.0324316
+Exception while resolving variable 'disabled' in template 'admin/widgets/clearable_file_input.html'.
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+KeyError: 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [disabled] in {'accept': 'image/*', 'id': 'id_gallerya'}
+Exception while resolving variable 'disabled' in template 'admin/widgets/clearable_file_input.html'.
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+KeyError: 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [disabled] in {'accept': 'image/*', 'id': 'id_galleryb'}
+Exception while resolving variable 'disabled' in template 'admin/widgets/clearable_file_input.html'.
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+KeyError: 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'disabled'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [disabled] in {'accept': 'image/*', 'id': 'id_galleryc'}
+File C:\Python311\Lib\site-packages\django\conf\locale\en\formats.py first seen with mtime 1674615470.987508
+File C:\Python311\Lib\site-packages\tzdata\zoneinfo\__init__.py first seen with mtime 1674615469.9812696
+File C:\Python311\Lib\site-packages\django\conf\locale\en\__init__.py first seen with mtime 1674615470.987508
+File C:\Python311\Lib\site-packages\tzdata\__init__.py first seen with mtime 1674615469.954711
+File C:\Python311\Lib\site-packages\django\contrib\auth\context_processors.py first seen with mtime 1674615472.0004022
+File C:\Python311\Lib\site-packages\django\contrib\messages\context_processors.py first seen with mtime 1674615473.0324316
+File C:\Python311\Lib\site-packages\django\template\context_processors.py first seen with mtime 1674615474.1399715
+"GET /admin/productos/product/8/change/ HTTP/1.1" 200 24989
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+File C:\Python311\Lib\site-packages\boto3\s3\inject.py first seen with mtime 1683142636.2933395
+"POST /admin/productos/product/8/change/ HTTP/1.1" 302 0
+"GET /admin/productos/product/ HTTP/1.1" 200 9927
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.d2f9f035226a.svg HTTP/1.1" 200 266
