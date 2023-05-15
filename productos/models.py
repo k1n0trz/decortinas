@@ -2,6 +2,7 @@ from django.db import models
 from ckeditor.fields import RichTextField
 from storages.backends.s3boto3 import S3Boto3Storage
 from django.urls import reverse
+from django.utils import timezone
 
 # Create your models here.
 class Asesor(models.Model):
@@ -13,8 +14,6 @@ class Asesor(models.Model):
 class S3ProductImage(S3Boto3Storage):
     location = 'imagenes-decortinas'
     file_overwrite = False
-
-from django.urls import reverse
 
 class Product(models.Model):
     # Elementos del header del producto
