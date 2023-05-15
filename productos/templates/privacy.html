@@ -1,23 +1,38 @@
 {% extends 'base/index.html' %}
+{% block ogtitle %}{{ pageogtitle }}{% endblock %}
+{% block ogdesc %}{{ pageogdesc }}{% endblock %}
+{% block oguimg %}{{ pageogimg }}{% endblock %}
+{% block ogurls %}{{ pageogurl }}{% endblock %}
+{% block ogurlimg %}{{ pageogurlsec }}{% endblock %}
+
+{% block mdescription %}{{ pagemetadesc }}{% endblock %}
+{% block keywords %}{{ pagekeywords }}{% endblock %}
+{% block title %}{{ pagemetatitle }}{% endblock %}
 {% block content %}
 {% load static %}
 <div class="img__baner">
-    <img src="{% static 'img/banner-contacto.jpg' %}" alt="Contacto Decortinas" class="img__banner--img">
-    <img src="{% static 'img/banner-contacto-mov.jpg' %}" alt="Contacto Decortinas" class="img__banner--imgmov">
+    {% if pagebanner %}
+    <img src="{{ pagebanner.url }}" alt="{{ pagename }} Decortinas y Persianas" class="img__banner--img">
+    {% endif %}
+    {% if pagebannermov %}
+    <img src="{{ pagebannermov.url }}" alt="{{ pagename }} Decortinas y Persianas" class="img__banner--imgmov">
+    {% endif %}
 </div>
 <div class="privacy">
     <div class="container migapan">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Política de Privacidad</li>
+                <li class="breadcrumb-item active" aria-current="page">{{ pagename }}</li>
             </ol>
         </nav>
     </div>
 
     <div class="privacy__header text-center">
-        <h1 style="margin-top: 140px;">Política de Privacidad | Decortinas y Persianas</h1>
+        <h1 class="privacy__header--title" style="margin-top: 100px;"><strong>{{ pagetitle }}</strong></h1>
+        <h2 class="privacy__header--subtitle">{{ pageslogan }}</h2>
     </div>
+
     <div class="privacy__body container">
         <div class="privacy__body--section">
             <p class="body__sect--text">

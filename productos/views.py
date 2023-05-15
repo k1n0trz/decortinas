@@ -126,10 +126,72 @@ def pauta(request):
         })
 
 def cookies(request):
-    return render(request, 'cookies.html')
+    pagina_cookies = get_object_or_404(Pagina, pagename='Cookies')
+    comments = Comment.objects.all()
+    pageslogan = pagina_cookies.pageslogan
+    pagetitle = pagina_cookies.pagetitle
+    pagename = pagina_cookies.pagename
+    pagebanner = pagina_cookies.pagebanner
+    pagebannermov = pagina_cookies.pagebannermov
+    pagemetatitle = pagina_cookies.pagemetatitle
+    pageogtitle = pagina_cookies.pageogtitle
+    pageogdesc = pagina_cookies.pageogdesc
+    pagekeywords = pagina_cookies.pagekeywords
+    pagemetadesc = pagina_cookies.pagemetadesc
+    pageogurl = pagina_cookies.pageogurl
+    pageogimg = pagina_cookies.pageogimg
+    pageogurlsec = pagina_cookies.pageogurlsec
+    return render(request, 'cookies.html', {
+        'pagina': pagina_cookies,
+        'pagemetatitle': pagemetatitle,
+        'pageogtitle': pageogtitle,
+        'pageogdesc': pageogdesc,
+        'pagekeywords': pagekeywords,
+        'pagemetadesc': pagemetadesc,
+        'pageogurl': pageogurl,
+        'pageogimg': pageogimg,
+        'pageogurlsec': pageogurlsec,
+        'pagebanner': pagebanner,
+        'pagename': pagename,
+        'pagebannermov': pagebannermov,
+        'pagetitle': pagetitle,
+        'pageslogan': pageslogan,
+        'comments': comments,
+        })
 
 def privacy(request):
-    return render(request, 'privacy.html')
+    pagina_privacy = get_object_or_404(Pagina, pagename='Privacy')
+    comments = Comment.objects.all()
+    pageslogan = pagina_privacy.pageslogan
+    pagetitle = pagina_privacy.pagetitle
+    pagename = pagina_privacy.pagename
+    pagebanner = pagina_privacy.pagebanner
+    pagebannermov = pagina_privacy.pagebannermov
+    pagemetatitle = pagina_privacy.pagemetatitle
+    pageogtitle = pagina_privacy.pageogtitle
+    pageogdesc = pagina_privacy.pageogdesc
+    pagekeywords = pagina_privacy.pagekeywords
+    pagemetadesc = pagina_privacy.pagemetadesc
+    pageogurl = pagina_privacy.pageogurl
+    pageogimg = pagina_privacy.pageogimg
+    pageogurlsec = pagina_privacy.pageogurlsec
+    return render(request, 'privacy.html', {
+        'pagina': pagina_privacy,
+        'pagemetatitle': pagemetatitle,
+        'pageogtitle': pageogtitle,
+        'pageogdesc': pageogdesc,
+        'pagekeywords': pagekeywords,
+        'pagemetadesc': pagemetadesc,
+        'pageogurl': pageogurl,
+        'pageogimg': pageogimg,
+        'pageogurlsec': pageogurlsec,
+        'pagebanner': pagebanner,
+        'pagename': pagename,
+        'pagebannermov': pagebannermov,
+        'pagetitle': pagetitle,
+        'pageslogan': pageslogan,
+        'comments': comments,
+        })
 
 def index(request):
     video =get_object_or_404(Video, videoname='Sheer Elegance')

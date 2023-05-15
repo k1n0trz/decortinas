@@ -1721,6 +1721,9 @@ footer .atributo .atributo__k1n0--enlace:hover {
 .privacy {
   margin-top: 100px;
 }
+.privacy .privacy__header .privacy__header--title {
+  color: #009292;
+}
 .privacy .privacy__body {
   width: 70%;
   margin-top: 40px;
@@ -1730,6 +1733,17 @@ footer .atributo .atributo__k1n0--enlace:hover {
   .privacy .privacy__body {
     width: 100%;
   }
+}
+
+.cookies {
+  margin-top: 100px;
+}
+.cookies .cookies__header .cookies__header--title {
+  color: #009292;
+}
+.cookies .cookies__body {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .comments .comments__header--title {
