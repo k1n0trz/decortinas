@@ -6,13 +6,21 @@
     </div>
 
     <div class="promo__body">
+        {% for promo in promos %}
         <a href="{% url 'tienda' %}" class="promo__body--link">
+            {% if promo.widepromo %}
+            <img src="{{ promo.widepromo.url }}" alt="" class="promo__body--img">
+            {% else %}
             <img src="{% static 'img/banner-promo.jpg' %}" alt="" class="promo__body--img">
+            {% endif %}
         </a>
         <a href="{% url 'tienda' %}" class="pb__link--mov">
-            <img src="{% static 'img/banner-promo-mov.jpg' %}" alt="" class="pb__img--mov">
+            {% if promo.movilpromo %}
+            <!-- <img src="{% static 'img/banner-promo-mov.jpg' %}" alt="" class="pb__img--mov"> -->
+            <img src="{{ promo.movilpromo.url }}" alt="" class="pb__img--mov">
+            {% endif %}
         </a>
-
+        {% endfor %}
         <div class="container">
             <a href="{% url 'tienda' %}" class="promo__body--btn"><strong>¡Llévala Hoy!</strong></a>
         </div>

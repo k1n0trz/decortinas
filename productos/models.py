@@ -103,3 +103,11 @@ class Video(models.Model):
 
     def __str__(self):
         return self.videoname
+    
+class Promo(models.Model):
+    promoname = models.CharField(max_length=200, verbose_name="Nombre de la promoción")
+    widepromo = models.ImageField(upload_to='imagenes-decortinas/', verbose_name="Imagen wide promo", default='/productos/static/img/default-mov.jpg')
+    movilpromo = models.ImageField(upload_to='imagenes-decortinas/', verbose_name="Imagen movil promo", default='/productos/static/img/default-mov.jpg')
+
+    def __str__(self):
+        return self.promoname
